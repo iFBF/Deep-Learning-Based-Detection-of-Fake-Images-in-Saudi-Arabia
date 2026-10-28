@@ -25,3 +25,9 @@ Experiment results are available in the results /directory
 
 ## Future Work - PHase 2
 Phase 2 will foces on object detection, image, segmentation, and the development of the web portal for Real/Fake image classification.
+
+
+## Project Resources
+
+### Dataset Card
+[View Dataset Card](docummentation/dataset_card.md)
