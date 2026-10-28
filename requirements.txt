@@ -1,2 +1,13 @@
+# External Libraries:
 torch
 torchvision
+numpy
+pandas
+Pillow
+matplotlib
+scipy
+scikit-learn
+tqdm
+transformers
+wandb
+IPython
