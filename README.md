@@ -31,3 +31,17 @@ Phase 2 will foces on object detection, image, segmentation, and the development
 
 ### Dataset Card
 [View Dataset Card](docummentation/dataset_card.md)
+
+
+## Project Structure
+
+```text
+Deep-Learning-Based-Detection-of-Fake-Images-in-Saudi-Arabia/
+├── notebooks/         # Training and evaluation notebooks
+├── results/           # Experiment results and metrics
+├── docummentation/    # Dataset card and documentation
+├── data/              # Dataset information
+├── requirements.txt   # Python dependencies
+├── .gitignore         # Git exclusion rules
+└── README.md          # Project overview
+```
