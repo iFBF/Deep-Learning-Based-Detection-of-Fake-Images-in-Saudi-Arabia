@@ -13,10 +13,10 @@ Phase 1 covers dataset prepartion, image clasifcation, model comparison, and eva
 4- dataset documentation
 
 ### Clasification Experiments (M2-M3)
-1- CNN trained from scratch
-2- Frozen pre-trained backbone
-3- Full fine-tune of a pre-trained model
-4- Evaluation of pre -trained image classification models
+1- CNN trained from scratch. 
+2- Frozen pre-trained backbone. 
+3- Full fine-tune of a pre-trained model. 
+4- Evaluation of pre -trained image classification models. 
 5- Experiment tracling using Weights and Biases (W&B)
 
 ### Evaluation Results
