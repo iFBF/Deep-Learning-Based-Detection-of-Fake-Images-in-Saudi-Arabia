@@ -113,6 +113,34 @@ The same experimental data splits are used for model comparisons.
 The evaluation is exploratory, and the documented dataset limitations should be considered when interpreting results.
 
 
+## Pretrained Models Comparison
+
+**Evaluation:** Validation | **Images:** 156 | **Resolution:** 224×224 | **Threshold:** 0.5
+
+| Model | Accuracy | Macro-F1 |
+|---|---:|---:|
+| Swin_AI_Image | **56.41%** | **56.38%** |
+| SigLIP2_Deepfake | 44.23% | 44.21% |
+| ViT_Dima | 45.51% | 41.03% |
+| SigLIP2_ThreeClass | 39.74% | 37.74% |
+| ViT_ThreeClass | 50.64% | 35.80% |
+
+**Best pretrained model:** Swin_AI_Image, selected using validation Macro-F1.
+
+
+## Training Strategies Comparison
+
+**Evaluation:** Exploratory Test | **Images:** 164 | **Resolution:** 224×224 | **Threshold:** 0.5
+
+| Model | Accuracy | Macro-F1 | ROC-AUC |
+|---|---:|---:|---:|
+| Pretrained | 59.15% | 59.07% | 60.26% |
+| Scratch CNN | 49.39% | 40.63% | 44.97% |
+| Frozen Backbone | 89.63% | 89.60% | 96.28% |
+| Full Fine-tuning | **97.56%** | **97.56%** | **99.76%** |
+
+**Best model:** Full Fine-tuning, selected based on validation performance.
+
 ## Team Members
 
 - Fahad Falah H. AlQahtani
