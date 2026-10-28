@@ -1,0 +1,5 @@
+mode,accuracy,top1_accuracy,top2_accuracy,macro_f1,roc_auc,ece,accuracy_ci95_low,accuracy_ci95_high,n_test,...,input_resolution,threshold,evaluation_status,real_precision,real_recall,real_f1,fake_precision,fake_recall,fake_f1,selected_by_validation
+pretrained,0.591463,0.591463,1.0,0.590718,0.602617,0.204639,0.512195,0.664634,164,...,"[224, 224]",0.5,exploratory: existing data previously used in ...,0.58427,0.634146,0.608187,0.6,0.54878,0.573248,False
+scratch,0.493902,0.493902,1.0,0.40629,0.449732,0.133905,0.420732,0.573171,164,...,"[224, 224]",0.5,exploratory: existing data previously used in ...,0.473684,0.109756,0.178218,0.496552,0.878049,0.634361,False
+frozen,0.896341,0.896341,1.0,0.896028,0.96282,0.064801,0.847561,0.939024,164,...,"[224, 224]",0.5,exploratory: existing data previously used in ...,0.945205,0.841463,0.890323,0.857143,0.95122,0.901734,False
+full,0.97561,0.97561,1.0,0.97561,0.99762,0.019297,0.95122,0.993902,164,...,"[224, 224]",0.5,exploratory: existing data previously used in ...,0.97561,0.97561,0.97561,0.97561,0.97561,0.97561,True

@@ -1,0 +1,9 @@
+mode,class,precision,recall,f1,support
+pretrained,Real,0.58427,0.634146,0.608187,82
+pretrained,Fake,0.6,0.54878,0.573248,82
+scratch,Real,0.473684,0.109756,0.178218,82
+scratch,Fake,0.496552,0.878049,0.634361,82
+frozen,Real,0.945205,0.841463,0.890323,82
+frozen,Fake,0.857143,0.95122,0.901734,82
+full,Real,0.97561,0.97561,0.97561,82
+full,Fake,0.97561,0.97561,0.97561,82

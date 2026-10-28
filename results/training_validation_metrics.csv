@@ -1,0 +1,4 @@
+stage,selected_backbone,split,input_resolution,threshold,best_epoch,epochs_ran,train_accuracy,val_accuracy,val_loss,generalization_gap,wandb_run_id,checkpoint,lr_group_0,lr_group_1,val_accuracy_change_pp,val_loss_change
+scratch,Random CNN,validation,"[224, 224]",0.5,2,7,0.58217,0.480769,0.758481,0.1014,affwjzv9,/kaggle/working/dfd_indoor_outdoor/outputs/pha...,0.01,,,
+frozen,umm-maybe/AI-image-detector,validation,"[224, 224]",0.5,3,8,0.954887,0.878205,0.357297,0.076682,rlbmyedp,/kaggle/working/dfd_indoor_outdoor/outputs/pha...,0.01,,39.74359,-0.401184
+full,umm-maybe/AI-image-detector,validation,"[224, 224]",0.5,14,15,1.0,0.967949,0.111783,0.032051,4npnazir,/kaggle/working/dfd_indoor_outdoor/outputs/pha...,0.005,0.0005,8.974359,-0.245514
