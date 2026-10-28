@@ -45,3 +45,69 @@ Deep-Learning-Based-Detection-of-Fake-Images-in-Saudi-Arabia/
 ├── .gitignore         # Git exclusion rules
 └── README.md          # Project overview
 ```
+
+
+## Installation & Usage
+
+### 1. Requirements
+
+- Python 3
+- Jupyter Notebook or Kaggle
+- Required Python libraries listed in `requirements.txt`
+- Access to the project dataset
+
+### 2. Install Dependencies
+
+Install the required Python libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Dataset Preparation
+
+The dataset is based on the Renyang/DANI dataset.
+
+Dataset source:
+https://huggingface.co/datasets/Renyang/DANI
+
+The notebook expects the prepared dataset to be available in the configured data directory.
+
+Users must update dataset paths according to their execution environment.
+
+### 4. Run the Notebook
+
+1. Open the `notebooks/` directory.
+2. Open the Phase 1 implementation notebook.
+3. Configure the dataset and output paths.
+4. Install the required dependencies.
+5. Execute the notebook cells in their intended order.
+
+### 5. Experiments
+
+The Phase 1 implementation includes:
+
+- Pretrained model validation comparisons
+- CNN trained from scratch
+- Frozen pretrained backbone
+- Full fine-tuning
+- Model evaluation and error analysis
+- Experiment tracking using Weights & Biases (W&B)
+
+### 6. Results
+
+Saved experiment metrics and evaluation results are available in the `results/` directory.
+
+Dataset documentation is available in:
+
+[Dataset Card](docummentation/dataset_card.md)
+
+### 7. Reproducibility
+
+The project uses a fixed random seed of `42`.
+
+Related images are grouped before data splitting to reduce potential data leakage.
+
+The same experimental data splits are used for model comparisons.
+
+The evaluation is exploratory, and the documented dataset limitations should be considered when interpreting results.
