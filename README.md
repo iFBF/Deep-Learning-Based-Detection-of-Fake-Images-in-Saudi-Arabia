@@ -111,3 +111,14 @@ Related images are grouped before data splitting to reduce potential data leakag
 The same experimental data splits are used for model comparisons.
 
 The evaluation is exploratory, and the documented dataset limitations should be considered when interpreting results.
+
+
+## Team Members
+
+- Fahad Falah H. AlQahtani
+- Anoud Mohammd A. Alenzei
+- Abdulaziz Salim AlQahtani
+
+**Program:** PGDip Artificial Intelligence 2026  
+**Institution:** King Abdullah University of Science and Technology (KAUST)
+
