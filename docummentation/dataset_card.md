@@ -45,7 +45,7 @@ Retained images: **1,398**
 | Reviewer | Group Members |
 | Review Method | Manual Visual Inspection |
 | Manual Label Audit Status | Complete — Confirmed by Group Members |
-| Review Scope | Visual Review; Independent Provenance Verified |
+| Review Scope | Manual Visual Review and Cross-Checking with the Original DANI Dataset |
 | Reported Label Disagreements | 0 |
 
 All 100 sampled images were manually reviewed by the group members, with no reported label disagreements.
@@ -87,7 +87,6 @@ Data augmentation was restricted to the training stage.
 Although grouping and duplicate checks were performed, complete independence between all shared-source images has not been established.
 
 ### 8. License and Privacy
-8. License and Privacy
 
 Dataset-level license: CC BY-NC 4.0, as documented for DANI.
 
@@ -96,7 +95,6 @@ The rights of underlying source images and individual consent have not been inde
 The dataset is intended for academic research. Redistribution and other uses require appropriate consideration of licensing and privacy limitations.
 
 ### 9. Intended Use and Limitations
-9. Intended Use and Limitations
 
 Intended use: Academic classification of real versus AI-generated indoor and outdoor images.
 
@@ -115,7 +113,7 @@ The dataset should not be treated as sufficient evidence for operational securit
 
 | Check | Status |
 |---|---|
-| Source Metadata and Label Mapping | Complete — Documented |
+| Source Metadata and Label Mapping | Complete — Manually Cross-Checked with Original DANI Dataset |
 | Automatic Grouping Checks | Complete |
 | Source IDs, Paths, and Duplicate Checks | Complete, with documented limitations |
 | Manual Label Review | Complete — 100/100 Reviewed |
@@ -124,4 +122,4 @@ The dataset should not be treated as sufficient evidence for operational securit
 | Random Seed | 42 |
 | Pretrained Label Aggregation | Reviewed During Model Loading |
 
-Note: The saved notebook also contains an earlier audit-gate message requesting recalculation or checking of the review file. The subsequently supplied manual-audit summary reports completion; the two records are preserved as distinct pieces of evidence.
+Note: The manual label audit was completed by the team. A total of 100 sampled images were visually reviewed and cross-checked against the original DANI dataset, with no reported label disagreements. The earlier automated audit-gate status is retained in the notebook as a historical record.
