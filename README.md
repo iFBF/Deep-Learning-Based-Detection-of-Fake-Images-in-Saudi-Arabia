@@ -141,6 +141,12 @@ The evaluation is exploratory, and the documented dataset limitations should be 
 
 **Best model:** Full Fine-tuning, selected based on validation performance.
 
+## Weights & Biases (W&B)
+
+All Phase 1 experiment results, model comparisons, training metrics, and performance visualizations are available on Weights & Biases.
+
+**[View Our W&B Project and Experiment Results](https://forge.coreweave.com/wandb/ifbf-kaust/phase1-real-fake/overview)**
+
 ## Team Members
 
 - Fahad Falah H. AlQahtani
