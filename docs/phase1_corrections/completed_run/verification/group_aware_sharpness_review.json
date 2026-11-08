@@ -1,0 +1,21 @@
+{
+  "analysis_status": "Additional exploratory review after inspecting the main results; not used for model selection",
+  "population": "Full model, DFGAN test Fake images",
+  "source_groups": 68,
+  "bootstrap_iterations": 50000,
+  "seed": 42,
+  "valid_draws": 50000,
+  "estimand": "Low-sharpness error rate minus other-image error rate; source groups resampled whole",
+  "observed_difference": -0.2833333333333333,
+  "percentile_ci95": [
+    -0.40841193836405526,
+    -0.14547684157368676
+  ],
+  "bonferroni_level_for_36_comparisons": 0.9986111111111111,
+  "bonferroni_level_percentile_interval": [
+    -0.47816142223058883,
+    -0.043255569628814626
+  ],
+  "interpretation": "Approximate group-bootstrap intervals support the negative observed association. No causal claim. Image-level Fisher/Holm values are exploratory because related images share a source parent.",
+  "source_csv_sha256": "b24645f49e1b00ae67ff2d0fa302710693aaafacbf01ae9f9058cefcf4e011c2"
+}

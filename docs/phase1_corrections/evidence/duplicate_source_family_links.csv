@@ -1,0 +1,3 @@
+relative_path,source_model,source_index,coco_image_id,sha256
+data/indoor_1_00267.png,GALIP,3928,159684,ae2a1be051dcc6b060dc800a8aa173226b09e6fdee75bdde828fa378f332d9eb
+data/outdoor_1_00279.png,GALIP,5124,479030,ae2a1be051dcc6b060dc800a8aa173226b09e6fdee75bdde828fa378f332d9eb

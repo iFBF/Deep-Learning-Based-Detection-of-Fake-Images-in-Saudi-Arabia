@@ -1,0 +1,19 @@
+{
+  "reserved_parent_groups": 68,
+  "reserved_images": 330,
+  "excluded_historical_overlap_parent_groups": 0,
+  "within_holdout_duplicate_copies_removed": 2,
+  "groups": 68,
+  "retained_parent_ids": 68,
+  "images": 328,
+  "class_counts": {
+    "1": 260,
+    "0": 68
+  },
+  "historical_group_overlap": 0,
+  "historical_pixel_overlap": 0,
+  "historical_near_duplicate_candidates": 0,
+  "new_generator": "DFGAN",
+  "protocol_sha256": "0544ea4ee4940c56874855021b0f0a5873f121ddeaf26c4880894374529eeb8b",
+  "status": "Acquired, overlap checks passed; not evaluated by a model"
+}

@@ -1,0 +1,12 @@
+{
+  "python": "3.13.16",
+  "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+  "run_id": "347c0f0188f04f8c873e2eac415e5723",
+  "started_at_utc": "2026-11-08T07:37:20.649152+00:00",
+  "code_hashes": {
+    "phase1_training.py": "118fbab1389716e3a70442a1302fec6324391f0f804c3185a638a10da3c7a517",
+    "phase1_corrections.py": "abecc3bc91506639640d3bc4a89d09b9ef0a0b9e7a57b13cbef8ec67fce5edd5",
+    "dani_provenance.py": "7e385f1fc5d4a507c7ae85e9fd478cdee8046ae0e6a5d232a479bfa1f5a090ad"
+  },
+  "operator": "Fahad Falah H. AlQahtani"
+}

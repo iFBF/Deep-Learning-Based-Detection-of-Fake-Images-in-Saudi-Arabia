@@ -1,158 +1,33 @@
-# Deep-Learning-Based-Detection-of-Fake-Images-in-Saudi-Arabia
+# Real-Absher — real / AI-generated image detection
 
-## Project Overview
-This project investigates deep learning methods for distinguishing real photographs from AI-generated images, focusing on security events, the Two Holy Mosques, and entertainment festivals in Saudi Arabia.
+The corrected Phase 1 main experiment is complete. On the source-disjoint 328-image DFGAN test, the validation-selected full model scores **68.60% accuracy (95% group-bootstrap CI 62.54–74.56%)** and **65.72% macro-F1**. The frozen comparison scores 88.72% accuracy and 85.02% macro-F1. Model selection remains based on validation cross-entropy; these test results document a generator-generalization limitation.
 
-## Phase 1 : Data Foundations and Image Classification
-Phase 1 covers dataset prepartion, image clasifcation, model comparison, and evaluation.
+See the [verified results and limitations](docs/phase1_corrections/VERIFIED_RESULTS.md) and [corrections/data guide](docs/phase1_corrections/README.md). The results archive passed 165 consistency checks. Another member's independent execution is still pending.
 
-### Data Preparation (M1)
-1. Dataset inspection and label verification
-2. Related-image grouping to reduce data leakage
-3. Training, validation, and test spliting
-4. Data set docmentation
-
-
-### Clasification Experiments (M2-M3)
-1. CNN trained from scratch. 
-2. Frozen pre-trained backbone. 
-3. Full fine-tune of a pre-trained model. 
-4. Evaluation of pre -trained image classification models. 
-5. Experiment tracling using Weights and Biases (W&B)
-
-### Evaluation Results
-Experiment results are available in the results /directory
-
-## Future Work - PHase 2
-Phase 2 will foces on object detection, image, segmentation, and the development of the web portal for Real/Fake image classification.
-
-
-## Project Resources
-
-### Dataset Card
-[View Dataset Card](docummentation/dataset_card.md)
-
-
-## Project Structure
-
-```text
-Deep-Learning-Based-Detection-of-Fake-Images-in-Saudi-Arabia/
-├── notebooks/         # Training and evaluation notebooks
-├── results/           # Experiment results and metrics
-├── docummentation/    # Dataset card and documentation
-├── data/              # Dataset information
-├── requirements.txt   # Python dependencies
-├── .gitignore         # Git exclusion rules
-└── README.md          # Project overview
-```
-
-
-## Installation & Usage
-
-### 1. Requirements
-
-- Python 3
-- Jupyter Notebook or Kaggle
-- Required Python libraries listed in `requirements.txt`
-- Access to the project dataset
-
-### 2. Install Dependencies
-
-Install the required Python libraries:
+## Check the recorded results without a GPU
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements-data.txt
+python scripts/verify_main_results.py
 ```
 
-### 3. Dataset Preparation
+This recomputes all eight primary/secondary metric rows from the saved predictions and checks their hashes, source/configuration records, validation checkpoint choices and group confidence intervals. It does not load weights or rerun inference. Use the full notebook below for fresh training.
 
-The dataset is based on the Renyang/DANI dataset.
+## Reproduce the fixed experiment
 
-Dataset source:
-https://huggingface.co/datasets/Renyang/DANI
+Use the [clean independent-member notebook](notebooks/phase1_independent_reproduction.ipynb) in a fresh Kaggle T4 GPU runtime with Internet enabled. Attach this code as a dataset and the original prepared DANI `data-dfd` images or `data.zip`. Make private inputs available to the actual member or grader. Enter the actual operator's name, install the pinned requirements, then run the experiment cell. The job trains all four strategies anew in a fresh Python process and exports real models and results.
 
-The notebook expects the prepared dataset to be available in the configured data directory.
+```bash
+python -m pip install -r requirements.txt
+python scripts/preflight_phase1.py
+```
 
-Users must update dataset paths according to their execution environment.
+Use the minimal pinned project files for installation. The completed run's `requirements-lock-executed.txt` records the whole Kaggle environment, including unrelated packages; it is an environment inventory rather than a standalone resolver input.
 
-### 4. Run the Notebook
+Keep the model ZIP and executed notebook. Return the smaller results ZIP for comparison with [the main run](docs/phase1_corrections/completed_run/). Historical notebook outputs and old result CSVs remain exploratory and are preserved for traceability. The earlier 97.56% result is not the corrected test score.
 
-1. Open the `notebooks/` directory.
-2. Open the Phase 1 implementation notebook.
-3. Configure the dataset and output paths.
-4. Install the required dependencies.
-5. Execute the notebook cells in their intended order.
+- [Dataset card](docummentation/dataset_card.md)
+- [Main-run verification record](docs/phase1_corrections/completed_run/verification/results_verification.json)
+- [Original main-run notebook](notebooks/phase1_corrections_kaggle.ipynb)
 
-### 5. Experiments
-
-The Phase 1 implementation includes:
-
-- Pretrained model validation comparisons
-- CNN trained from scratch
-- Frozen pretrained backbone
-- Full fine-tuning
-- Model evaluation and error analysis
-- Experiment tracking using Weights & Biases (W&B)
-
-### 6. Results
-
-Saved experiment metrics and evaluation results are available in the `results/` directory.
-
-Dataset documentation is available in:
-
-[Dataset Card](docummentation/dataset_card.md)
-
-### 7. Reproducibility
-
-The project uses a fixed random seed of `42`.
-
-Related images are grouped before data splitting to reduce potential data leakage.
-
-The same experimental data splits are used for model comparisons.
-
-The evaluation is exploratory, and the documented dataset limitations should be considered when interpreting results.
-
-
-## Pretrained Models Comparison
-
-**Evaluation:** Validation | **Images:** 156 | **Resolution:** 224×224 | **Threshold:** 0.5
-
-| Model | Accuracy | Macro-F1 |
-|---|---:|---:|
-| Swin_AI_Image | **56.41%** | **56.38%** |
-| SigLIP2_Deepfake | 44.23% | 44.21% |
-| ViT_Dima | 45.51% | 41.03% |
-| SigLIP2_ThreeClass | 39.74% | 37.74% |
-| ViT_ThreeClass | 50.64% | 35.80% |
-
-**Best pretrained model:** Swin_AI_Image, selected using validation Macro-F1.
-
-
-## Training Strategies Comparison
-
-**Evaluation:** Exploratory Test | **Images:** 164 | **Resolution:** 224×224 | **Threshold:** 0.5
-
-| Model | Accuracy | Macro-F1 | ROC-AUC |
-|---|---:|---:|---:|
-| Pretrained | 59.15% | 59.07% | 60.26% |
-| Scratch CNN | 49.39% | 40.63% | 44.97% |
-| Frozen Backbone | 89.63% | 89.60% | 96.28% |
-| Full Fine-tuning | **97.56%** | **97.56%** | **99.76%** |
-
-**Best model:** Full Fine-tuning, selected based on validation performance.
-
-## Weights & Biases (W&B)
-
-All Phase 1 experiment results, model comparisons, training metrics, and performance visualizations are available on Weights & Biases.
-
-**[View Our W&B Project and Experiment Results](https://forge.coreweave.com/wandb/ifbf-kaust/phase1-real-fake/overview)**
-
-## Team Members
-
-- Fahad Falah H. AlQahtani
-- Anoud Mohammd A. Alenzei
-- Abdulaziz Salim AlQahtani
-
-**Program:** PGDip Artificial Intelligence 2026  
-**Institution:** King Abdullah University of Science and Technology (KAUST)
-
+Team: Fahad Falah H. AlQahtani, Anoud Mohammd A. Alenzei, Abdulaziz Salim AlQahtani.

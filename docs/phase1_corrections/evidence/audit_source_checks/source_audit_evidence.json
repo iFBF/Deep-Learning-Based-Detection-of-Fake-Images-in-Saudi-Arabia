@@ -1,0 +1,906 @@
+{
+  "revision": "870e29fcdc13c405fae35442899e9ba1da11691d",
+  "method": "Original publisher bytes, declared Lanczos resize if needed, PSNR>=50 dB and mean RGB difference<=0.5",
+  "rows": [
+    {
+      "relative_path": "data/indoor_0_00426.png",
+      "source_index": 446257,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "482319_518061.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_0_00179.png",
+      "source_index": 443241,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "61268_681676.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_1_00317.png",
+      "source_index": 4684,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "179653_542737.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00262.png",
+      "source_index": 3846,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "384527_319992.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00202.png",
+      "source_index": 3559,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "36861_664720.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_0_00374.png",
+      "source_index": 447077,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "60347_35814.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_1_00247.png",
+      "source_index": 4358,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "32941_293743.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00143.png",
+      "source_index": 2007,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "130465_750870.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00345.png",
+      "source_index": 6369,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "545100_347549.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_0_00039.png",
+      "source_index": 440844,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "234757_717933.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_1_00114.png",
+      "source_index": 1897,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "503841_156862.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_0_00192.png",
+      "source_index": 442945,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "534601_165933.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_1_00184.png",
+      "source_index": 2607,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "51326_453928.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00003.png",
+      "source_index": 55,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "35279_453361.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00352.png",
+      "source_index": 6529,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "252219_114199.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00205.png",
+      "source_index": 3616,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "291664_46464.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00426.png",
+      "source_index": 6055,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "482319_518061.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_0_00433.png",
+      "source_index": 447998,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "89697_695262.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_1_00127.png",
+      "source_index": 1832,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "376856_693065.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_0_00423.png",
+      "source_index": 446233,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "376478_329741.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_0_00168.png",
+      "source_index": 442600,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "255483_262359.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_1_00380.png",
+      "source_index": 6994,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "260266_518063.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00116.png",
+      "source_index": 1587,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "302030_391381.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00203.png",
+      "source_index": 3566,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "479030_392575.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00341.png",
+      "source_index": 5045,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "544306_731609.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_0_00216.png",
+      "source_index": 443316,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "278463_436280.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_1_00053.png",
+      "source_index": 864,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "79408_415072.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00224.png",
+      "source_index": 3228,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "160666_625121.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00282.png",
+      "source_index": 5165,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "558558_22565.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00370.png",
+      "source_index": 5470,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "568710_115000.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00123.png",
+      "source_index": 1762,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "429530_649338.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00222.png",
+      "source_index": 3850,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "323571_350463.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00364.png",
+      "source_index": 6699,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "307598_738506.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00367.png",
+      "source_index": 5458,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "455352_816232.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00404.png",
+      "source_index": 7293,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "168619_712661.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00110.png",
+      "source_index": 1518,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "424135_289128.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00232.png",
+      "source_index": 3312,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "31248_439740.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00117.png",
+      "source_index": 1983,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "172856_459338.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00288.png",
+      "source_index": 4248,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "414340_176912.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_0_00402.png",
+      "source_index": 445981,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "136466_339370.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_0_00328.png",
+      "source_index": 445001,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "372349_23180.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_0_00319.png",
+      "source_index": 444898,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "519522_789956.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_1_00397.png",
+      "source_index": 5755,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "322944_556519.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_0_00256.png",
+      "source_index": 444727,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "351559_764176.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_1_00144.png",
+      "source_index": 2021,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "454067_429264.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00322.png",
+      "source_index": 4718,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "384136_192184.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00107.png",
+      "source_index": 1820,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "8762_770024.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_0_00114.png",
+      "source_index": 441774,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "69795_360423.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_1_00015.png",
+      "source_index": 237,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "297343_345808.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_0_00065.png",
+      "source_index": 441070,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "166478_391891.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_1_00138.png",
+      "source_index": 1921,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "184762_316020.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00291.png",
+      "source_index": 5378,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "440617_245726.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00411.png",
+      "source_index": 7427,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "171050_330015.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00334.png",
+      "source_index": 4907,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "512194_372894.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00028.png",
+      "source_index": 315,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "468233_164002.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00396.png",
+      "source_index": 5719,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "159684_454559.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00377.png",
+      "source_index": 6972,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "201148_242003.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00427.png",
+      "source_index": 7717,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "580757_289114.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_0_00439.png",
+      "source_index": 448189,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "365745_504974.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_0_00203.png",
+      "source_index": 443098,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "76211_179412.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_1_00241.png",
+      "source_index": 4307,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "244019_81972.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00096.png",
+      "source_index": 1635,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "184400_369126.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00284.png",
+      "source_index": 5213,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "537153_521913.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00191.png",
+      "source_index": 3407,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "152465_771557.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00046.png",
+      "source_index": 627,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "474293_524241.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00251.png",
+      "source_index": 4462,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "442746_219669.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_0_00068.png",
+      "source_index": 441333,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "510095_15543.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_0_00413.png",
+      "source_index": 446094,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "172617_202428.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_1_00136.png",
+      "source_index": 1903,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "551439_439590.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00400.png",
+      "source_index": 5766,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "555005_103490.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00339.png",
+      "source_index": 6186,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "271457_575013.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00303.png",
+      "source_index": 4479,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "97585_32604.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_0_00087.png",
+      "source_index": 441480,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "434996_316807.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_0_00367.png",
+      "source_index": 446928,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "42628_371622.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_0_00165.png",
+      "source_index": 442486,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "7888_518375.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_0_00384.png",
+      "source_index": 447266,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "500826_433675.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_0_00427.png",
+      "source_index": 447919,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "580757_289114.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_1_00440.png",
+      "source_index": 7998,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "18491_89679.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00152.png",
+      "source_index": 2653,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "246963_545711.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00395.png",
+      "source_index": 5718,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "55528_123472.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00416.png",
+      "source_index": 5925,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "529148_60946.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00076.png",
+      "source_index": 1025,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "532901_625829.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00216.png",
+      "source_index": 3114,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "278463_436280.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00089.png",
+      "source_index": 1503,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "200162_638197.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00211.png",
+      "source_index": 3083,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "35279_449734.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00057.png",
+      "source_index": 894,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "269682_39631.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00327.png",
+      "source_index": 5917,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "547336_815871.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00207.png",
+      "source_index": 2946,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "55150_323196.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00424.png",
+      "source_index": 6039,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "276921_541009.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00357.png",
+      "source_index": 5335,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "73118_384810.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00185.png",
+      "source_index": 2649,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "419098_643584.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_0_00007.png",
+      "source_index": 440295,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "409198_69197.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_0_00247.png",
+      "source_index": 443740,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "478393_609186.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/indoor_1_00218.png",
+      "source_index": 3128,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "371699_637155.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_0_00163.png",
+      "source_index": 442459,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "190236_2846.jpg",
+      "publisher_label": 0
+    },
+    {
+      "relative_path": "data/outdoor_1_00297.png",
+      "source_index": 5430,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "366178_672697.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00343.png",
+      "source_index": 6344,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "279714_397206.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00414.png",
+      "source_index": 7467,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "549220_569886.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/indoor_1_00128.png",
+      "source_index": 1846,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "324258_716873.jpg",
+      "publisher_label": 1
+    },
+    {
+      "relative_path": "data/outdoor_1_00100.png",
+      "source_index": 1722,
+      "status": "matched",
+      "psnr_db": 999.0,
+      "mean_rgb_difference": 0.0,
+      "publisher_filename": "129135_430873.jpg",
+      "publisher_label": 1
+    }
+  ]
+}

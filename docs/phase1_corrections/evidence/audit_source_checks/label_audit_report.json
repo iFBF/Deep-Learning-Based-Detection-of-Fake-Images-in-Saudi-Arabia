@@ -1,0 +1,8 @@
+{
+  "sample_size": 100,
+  "decisions_recorded": 100,
+  "errors": 0,
+  "complete": true,
+  "one_sided_95pct_upper_error_rate": 0.029513049607039925,
+  "method": "Clopper-Pearson; completed fixed random sample; source-label correspondence, not real-world authenticity"
+}

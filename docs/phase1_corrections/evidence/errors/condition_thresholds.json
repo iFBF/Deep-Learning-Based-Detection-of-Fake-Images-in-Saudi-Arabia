@@ -1,0 +1,14 @@
+{
+  "fit_split": "historical training only",
+  "resolution": [
+    224,
+    224
+  ],
+  "thresholds": {
+    "dark": 0.281921049669868,
+    "bright": 0.5710304434273709,
+    "low_contrast": 0.16589871526664896,
+    "low_sharpness": 0.006953410653477076
+  },
+  "interpretation": "Image statistics are proxies; low contrast is not a confirmed haze annotation."
+}

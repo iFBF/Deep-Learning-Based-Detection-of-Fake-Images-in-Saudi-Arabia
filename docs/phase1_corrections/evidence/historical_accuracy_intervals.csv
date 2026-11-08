@@ -1,0 +1,4 @@
+mode,n,caption_groups,accuracy,caption_group_ci95_low,caption_group_ci95_high,status
+scratch,164,152,0.49390243902439024,0.4216791695082216,0.5652173913043478,Historical exploratory; regrouped interval does not remove training/test leakage
+frozen,164,152,0.8963414634146342,0.8509316770186336,0.9386503067484663,Historical exploratory; regrouped interval does not remove training/test leakage
+full,164,152,0.975609756097561,0.95,0.9940828402366864,Historical exploratory; regrouped interval does not remove training/test leakage

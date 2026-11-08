@@ -1,125 +1,27 @@
-# Dataset Card
-### 1. Dataset Overview
-Dataset Name: Indoor/Outdoor Real/Fake Subset of Renyang/DANI  
-Source: https://huggingface.co/datasets/Renyang/DANI  
-Purpose: Academic binary image classification to distinguish real photographs from AI-generated images.
-Image Format: RGB PNG
-Labels:
- 1. Real = 0
- 2. Fake = 1
+# Dataset card — corrected Phase 1 protocol
 
-### 2. Data Source and Verification
-The dataset was prepared from the Renyang/DANI dataset available on Hugging Face.
-We reviewed the dataset documentation and original download code to verify the source metadata and label mapping.
+## Sources and scope
 
-The reference field determines the binary labels:
-1. True = Real (0)
-2. False = Fake (1)
+Prepared indoor/outdoor subset of [Renyang/DANI](https://huggingface.co/datasets/Renyang/DANI), originally distributed as [Kaggle anoudmohammd/data-dfd](https://www.kaggle.com/datasets/anoudmohammd/data-dfd). Real=0 maps from publisher reference=True; Fake=1 maps from False. Original fake images are GALIP; the fresh test uses DFGAN. No Saudi-event deployment result is established.
 
-The source_model and source_index fields preserve metadata provided by DANI, while relative_path identifies each saved image.
+## Cleaning and verified source grouping
 
-Unique source indices do not necessarily guarantee independence between related images. This limitation is documented.
+Original 1,800 images: unreadable 0; duplicate copies removed 402; retained 1,398. There are 499 original COCO parent IDs. One identical fake connects two parent families, producing 498 connected source groups. No pHash pair at Hamming distance <=4 remained after deduplication. Captions were resolved from original DANI filenames and checked against the publisher's caption-to-image dictionary. A DANI row index is never treated as a COCO image ID.
 
-### 3. Data Cleaning and Preprocessing
-The data preparation pipeline includes:
-1. EXIF orientation correction
-2. RGB conversion
-3. PNG export
-4. Removal of exact duplicate images
-5. Perceptual similarity checks
-6. Grouping of related images
-7. Group-aware train, validation, and test splitting
+Development splits: train 1,165 images / 415 groups (416 Real, 749 Fake); validation 233 images / 83 groups (83 Real, 150 Fake). All historical images are treated as development data. The previously reported exploratory test is not an unseen holdout.
 
-Original images: **1,800**
-Removed exact duplicates: **402**
-Retained images: **1,398**
+The new indoor/outdoor cohort contains 328 images in 68 source groups (68 Real, 260 DFGAN Fake), after removing two duplicate copies. It shares no parent groups, decoded pixel hashes or pHash<=4 candidates with the historical data. Fahad evaluated this fixed cohort in Kaggle on 8 November 2026. It is now closed to tuning; the completed evaluation is versioned under `docs/phase1_corrections/completed_run/`. DFGAN is held out from training. Full unbalanced evaluation is primary; a fixed balanced secondary subset uses the same final predictions.
 
+## Recorded audit
 
-### 4. Manual Label Audit
+A fixed seed-42 random sample of 100 retained original images was independently compared with original DANI parquet image bytes and reference fields. All 100 decoded images matched exactly; 0 label disagreements were found. `label_audit.csv` contains the per-image decision, reviewer/method, timestamp, publisher evidence and notes. The method is automated publisher-record checking; no human visual review is claimed for these new decisions. The one-sided 95% Clopper-Pearson upper bound is 2.9513% for source-label disagreement. This does not prove real-world authenticity of every publisher-labelled photograph.
 
-| Check | Result |
-|---|---|
-| Audit Sample Size | 100 |
-| Images Reviewed | 100 |
-| Samples Pending Review | 0 |
-| Reviewer | Group Members |
-| Review Method | Manual Visual Inspection |
-| Manual Label Audit Status | Complete — Confirmed by Group Members |
-| Review Scope | Manual Visual Review and Cross-Checking with the Original DANI Dataset |
-| Reported Label Disagreements | 0 |
+## Processing, limitations and privacy
 
-All 100 sampled images were manually reviewed by the group members, with no reported label disagreements.
+Model input is consistently 224x224 RGB. Physical batch eight, training-only flip and brightness/contrast jitter, and saved Swin processor normalization are implemented in the clean workflow. Class weights are computed from training counts only. The completed unweighted/weighted scratch ablation uses identical settings and initialization: Real recall increases from 48.53% to 61.76% and macro-F1 from 76.72% to 78.65%, while overall accuracy decreases from 87.20% to 86.59%.
 
-This review supports the recorded label audit but does not independently establish generation provenance.
+The publisher scene field is inherited, not a separately audited literal scene description. Source-generator shortcuts, unknown pretrained-data overlap, limited generator coverage and geographic bias remain. A held-out DFGAN test does not establish performance on every generator or Saudi security events.
 
+DANI lists CC BY-NC 4.0; the prepared export's underlying rights and individual consent are not independently certified. Full datasets, downloaded parquet files and credentials are excluded from Git. Only required metadata and aggregate/prediction evidence are committed. The main GPU run and final metrics are complete. Another member's independent training/reproduction remains outstanding. The validation-selected full model scores 68.60% primary accuracy (95% group-bootstrap CI 62.54–74.56%); the frozen comparison scores 88.72%. These expose a generator-generalization limitation, not a geographic deployment result.
 
-## 5. Dataset Class Distribution
-
-| Split | Real (0) | Fake (1) | Total |
-|---|---:|---:|---:|
-| Train | 339 | 592 | 931 |
-| Validation | 78 | 156 | 234 |
-| Test | 82 | 151 | 233 |
-| **Total** | **499** | **899** | **1,398** |
-The complete cleaned dataset exhibits class imbalance, with more fake images than real images.
-
-### 6. Experimental Dataset Distribution
-The experiments used balanced Real/Fake subsets for validation and testing.
-
-| Split | Real (0) | Fake (1) | Total |
-|---|---:|---:|---:|
-| Train | 339 | 592 | 931 |
-| Validation | 78 | 78 | 156 |
-| Test | 82 | 82 | 164 |
-| **Total** | **499** | **752** | **1,251** |
-
-The full training split was retained, while validation and test subsets contained equal numbers of real and fake images.
-
-### 7. Data Splitting and Reproducibility
-Random Seed: 42
-
-Related images were grouped before splitting to reduce potential data leakage.
-
-The same fixed experimental splits were used across model comparisons.
-
-Data augmentation was restricted to the training stage.
-
-Although grouping and duplicate checks were performed, complete independence between all shared-source images has not been established.
-
-### 8. License and Privacy
-
-Dataset-level license: CC BY-NC 4.0, as documented for DANI.
-
-The rights of underlying source images and individual consent have not been independently verified.
-
-The dataset is intended for academic research. Redistribution and other uses require appropriate consideration of licensing and privacy limitations.
-
-### 9. Intended Use and Limitations
-
-Intended use: Academic classification of real versus AI-generated indoor and outdoor images.
-
-Limitations:
-1. Class imbalance in the cleaned dataset
-2. Potential source-specific shortcuts
-3. Incomplete verification of shared-source independence
-4. Unknown overlap with pretrained models' training data
-5. Exploratory evaluation due to previous development use of local data
-6. No established validation for real-world Saudi security events
-
-The dataset should not be treated as sufficient evidence for operational security decisions.
-
-### 10. Documentation and Verification Status
-
-
-| Check | Status |
-|---|---|
-| Source Metadata and Label Mapping | Complete — Manually Cross-Checked with Original DANI Dataset |
-| Automatic Grouping Checks | Complete |
-| Source IDs, Paths, and Duplicate Checks | Complete, with documented limitations |
-| Manual Label Review | Complete — 100/100 Reviewed |
-| Dataset Card Documentation | Complete |
-| License and Privacy | Documented with limitations |
-| Random Seed | 42 |
-| Pretrained Label Aggregation | Reviewed During Model Loading |
-
-Note: The manual label audit was completed by the team. A total of 100 sampled images were visually reviewed and cross-checked against the original DANI dataset, with no reported label disagreements. The earlier automated audit-gate status is retained in the notebook as a historical record.
+See [the corrections guide](../docs/phase1_corrections/README.md) and its versioned evidence for full records.

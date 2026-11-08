@@ -1,0 +1,22 @@
+{
+  "mode": "frozen",
+  "accuracy": 0.8963414634146342,
+  "top1_accuracy": 0.8963414634146342,
+  "top2_accuracy": 1.0,
+  "macro_f1": 0.8960283423457021,
+  "roc_auc": 0.962819750148721,
+  "ece": 0.06480103975862704,
+  "accuracy_ci95_low": 0.8475609756097561,
+  "accuracy_ci95_high": 0.9390243902439024,
+  "n_test": 164,
+  "split": "exploratory_test",
+  "input_resolution": "[224, 224]",
+  "threshold": 0.5,
+  "evaluation_status": "exploratory: existing data previously used in development",
+  "real_precision": 0.9452054794520548,
+  "real_recall": 0.8414634146341463,
+  "real_f1": 0.8903225806451613,
+  "fake_precision": 0.8571428571428571,
+  "fake_recall": 0.9512195121951219,
+  "fake_f1": 0.9017341040462428
+}

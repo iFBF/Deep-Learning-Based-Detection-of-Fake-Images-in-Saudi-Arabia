@@ -1,0 +1,17 @@
+mode,scene,label,n,errors
+scratch_unweighted,indoor,0,54,31
+scratch_unweighted,indoor,1,208,4
+scratch_unweighted,outdoor,0,14,4
+scratch_unweighted,outdoor,1,52,3
+scratch,indoor,0,54,24
+scratch,indoor,1,208,13
+scratch,outdoor,0,14,2
+scratch,outdoor,1,52,5
+frozen,indoor,0,54,3
+frozen,indoor,1,208,25
+frozen,outdoor,0,14,1
+frozen,outdoor,1,52,8
+full,indoor,0,54,3
+full,indoor,1,208,69
+full,outdoor,0,14,0
+full,outdoor,1,52,31

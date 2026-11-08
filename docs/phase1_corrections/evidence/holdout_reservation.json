@@ -1,0 +1,17 @@
+{
+  "groups": 68,
+  "images": 330,
+  "class_counts": {
+    "0": 68,
+    "1": 262
+  },
+  "heldout_generator": "DFGAN",
+  "scenes": [
+    "indoor",
+    "outdoor"
+  ],
+  "development_generator": "GALIP",
+  "historical_parent_overlap": 0,
+  "selection": "All available parent groups with real and DFGAN indoor/outdoor records outside ALL historical groups; no model predictions consulted",
+  "status": "Reserved; acquisition and pixel/near-duplicate checks required"
+}
