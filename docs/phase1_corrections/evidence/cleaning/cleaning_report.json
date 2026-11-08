@@ -1,0 +1,12 @@
+{
+  "input_images": 1800,
+  "unreadable_images": 0,
+  "readable_images": 1800,
+  "duplicate_copies_removed": 402,
+  "retained_images": 1398,
+  "conflicting_exact_labels": 0,
+  "input_resolution": [
+    224,
+    224
+  ]
+}

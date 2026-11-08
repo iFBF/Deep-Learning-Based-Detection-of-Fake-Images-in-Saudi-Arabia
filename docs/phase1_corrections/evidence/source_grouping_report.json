@@ -1,0 +1,29 @@
+{
+  "linked_original_rows": 1800,
+  "raw_parent_coco_groups": 499,
+  "retained_images": 1398,
+  "retained_parent_coco_groups": 499,
+  "historical_groups_crossing_old_splits": 244,
+  "corrected_group_counts": {
+    "train": 415,
+    "val": 83
+  },
+  "corrected_image_counts": {
+    "train": 1165,
+    "val": 233
+  },
+  "corrected_class_counts": {
+    "train": {
+      "0": 416,
+      "1": 749
+    },
+    "val": {
+      "0": 83,
+      "1": 150
+    }
+  },
+  "test_status": "Historical images are train/validation only; new source-disjoint DFGAN cohort reserved separately",
+  "retained_connected_source_groups": 498,
+  "exact_pixel_links_between_different_parents": 1,
+  "historical_connected_groups_crossing_old_splits": 244
+}

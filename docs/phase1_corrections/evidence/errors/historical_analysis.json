@@ -1,0 +1,65 @@
+{
+  "scratch": {
+    "n": 164,
+    "accuracy": 0.49390243902439024,
+    "macro_f1": 0.4062895276311772,
+    "real_recall": 0.10975609756097561,
+    "fake_recall": 0.8780487804878049,
+    "predicted_fake_fraction": 0.8841463414634146,
+    "confusion_matrix": [
+      [
+        9,
+        73
+      ],
+      [
+        10,
+        72
+      ]
+    ]
+  },
+  "frozen": {
+    "n": 164,
+    "accuracy": 0.8963414634146342,
+    "macro_f1": 0.8960283423457021,
+    "real_recall": 0.8414634146341463,
+    "fake_recall": 0.9512195121951219,
+    "predicted_fake_fraction": 0.5548780487804879,
+    "confusion_matrix": [
+      [
+        69,
+        13
+      ],
+      [
+        4,
+        78
+      ]
+    ]
+  },
+  "full": {
+    "n": 164,
+    "accuracy": 0.975609756097561,
+    "macro_f1": 0.975609756097561,
+    "real_recall": 0.975609756097561,
+    "fake_recall": 0.975609756097561,
+    "predicted_fake_fraction": 0.5,
+    "confusion_matrix": [
+      [
+        80,
+        2
+      ],
+      [
+        2,
+        80
+      ]
+    ]
+  },
+  "scratch_diagnosis": {
+    "train_real": 339,
+    "train_fake": 592,
+    "training_fake_fraction": 0.635875402792696,
+    "predicted_fake_fraction": 0.8841463414634146,
+    "always_fake_balanced_test_accuracy": 0.5,
+    "always_fake_balanced_test_macro_f1": 0.3333333333333333,
+    "interpretation": "Observed class bias and weak validation fit. Imbalance is plausible, not proven as the sole cause. Compare unweighted/weighted scratch with identical groups and initialization; select on validation."
+  }
+}

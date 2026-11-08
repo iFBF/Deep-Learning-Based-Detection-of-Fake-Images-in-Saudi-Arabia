@@ -1,0 +1,16 @@
+{
+  "seed": 42,
+  "image_size": 224,
+  "batch_size": 8,
+  "accumulation_steps": 1,
+  "cnn_epochs": 25,
+  "transfer_epochs": 15,
+  "cnn_lr": 0.01,
+  "head_lr": 0.01,
+  "backbone_lr": 0.001,
+  "momentum": 0.9,
+  "weight_decay": 0.0001,
+  "patience": 5,
+  "min_delta": 0.0001,
+  "threshold": 0.5
+}

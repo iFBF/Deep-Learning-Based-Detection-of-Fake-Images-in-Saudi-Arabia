@@ -1,0 +1,15 @@
+{
+  "dani_revision": "870e29fcdc13c405fae35442899e9ba1da11691d",
+  "dani_url": "https://huggingface.co/datasets/Renyang/DANI",
+  "caption_dictionary_url": "https://github.com/ryliu68/DJudge/blob/main/demo_code/Collect_AIGI_data/data/image_captions_dict_new.json",
+  "caption_dictionary_sha256": "d21590e888794de4faa768f2a36c3f00c8088fb23330bf0b1e1addd8437999e7",
+  "publisher_shard0_sha256": "4eec87b76e59fbedf673ec2901a7e15c2244343ddc226acaefd3e095adb75539",
+  "mapping": "Parquet image.path has COCO image ID and caption ID; every caption-parent pair validated against publisher dictionary",
+  "audit": "100 original publisher images matched decoded pixels exactly; labels derived independently from publisher reference; no human review claimed",
+  "input_resolution": [
+    224,
+    224
+  ],
+  "historical_results": "exploratory, unchanged",
+  "corrected_gpu_results": "not produced yet"
+}

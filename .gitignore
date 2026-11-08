@@ -1,3 +1,13 @@
 .DS_Store
 .ipynb_checkpoints
 .env
+# Local datasets, publisher shards, training artifacts and credentials
+data/cache/
+data/local/
+outputs/
+*.pt
+*.pth
+__pycache__/
+.venv/
+wandb/
+.env

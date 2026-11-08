@@ -1,0 +1,49 @@
+{
+  "core_unit_tests": 7,
+  "torch_cpu_version": "2.11.0+cpu",
+  "actual_scratch_architecture_one_epoch_synthetic_training": "passed, physical batch 1 and partial accumulation window",
+  "checkpoint_roundtrip": "passed",
+  "validation_macro_f1_export": "passed",
+  "class_weighted_gradient_batch_one": "passed",
+  "actual_project_gpu_training": "Completed main Kaggle run by Fahad; real outputs and records in ../completed_run/",
+  "independent_member_rerun": "Not supplied; fresh actual member execution pending",
+  "total_tests_with_cpu_training": 11,
+  "transformers_version": "5.16.1",
+  "transfer_mode_local_roundtrips": "frozen/full tiny actual HF Swin: training, frozen-backbone invariance, config/weight reload and local processor reload passed",
+  "checkpoint_selection_policy": "minimum validation cross-entropy; early-stop min_delta does not suppress saving a lower-loss checkpoint",
+  "kaggle_runtime_dependency_fix": {
+    "cause": "Torch CUDA 12.8 with preinstalled TorchAudio CUDA 13.0; Transformers image import transitively imports audio",
+    "pinned_torchaudio": "2.11.0+cu128",
+    "verified_artifact": "torchaudio-2.11.0+cu128-cp313-cp313-manylinux_2_28_x86_64.whl",
+    "artifact_sha256": "343a3548b3291adf552cd4a03a9f9490d96cb3367a8ad92dcb0b8f0143432e80",
+    "verification": "Official wheel downloaded and metadata checked; notebook code syntax checked; Kaggle GPU execution still pending"
+  },
+  "fixed_development_manifest_verification": {
+    "manifest_sha256": "15f17c6e5d7f6c5df0ce4ac0a6f09023b797e6710e3dc64870bfb3ecbf0ad138",
+    "cause_reproduced": {
+      "scikit-learn 1.6.1": {
+        "train": 1159,
+        "val": 239
+      },
+      "scikit-learn 1.8.0": {
+        "train": 1165,
+        "val": 233
+      }
+    },
+    "canonical_fixed_assignments": {
+      "train_images": 1165,
+      "val_images": 233,
+      "train_groups": 415,
+      "val_groups": 83
+    },
+    "checked_under": [
+      "scikit-learn 1.6.1",
+      "scikit-learn 1.8.0"
+    ],
+    "input_checks": "Manifest checksum, retained pixel population, per-path pixel hash, label and connected source group; an altered label was rejected in both versions",
+    "test_output_type": "Actual committed data records; not project GPU accuracy"
+  },
+  "completed_run_consistency_checks": 165,
+  "completed_run_id": "347c0f0188f04f8c873e2eac415e5723",
+  "independent_notebook_validation": "JSON structure, code-cell and embedded child-script syntax checked; actual member execution pending"
+}

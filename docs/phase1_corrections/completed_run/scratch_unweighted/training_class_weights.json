@@ -1,0 +1,11 @@
+{
+  "counts": [
+    416,
+    749
+  ],
+  "weights": [
+    1.0,
+    1.0
+  ],
+  "reduction": "fixed-denominator per-example weighted loss; weights do not cancel at physical batch size one"
+}
