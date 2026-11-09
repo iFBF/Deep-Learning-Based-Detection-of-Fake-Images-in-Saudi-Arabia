@@ -1,0 +1,309 @@
+{
+  "split": "test",
+  "images": 114,
+  "source_families": 19,
+  "release_id": "real-abshar-m8-fbaa1c95818d",
+  "thresholds": {
+    "classifier_fake_threshold": 0.5,
+    "detector_confidence": 0.35,
+    "detector_nms_iou": 0.45,
+    "detector_max_detections": 50,
+    "segmenter_pixel_threshold": 0.5,
+    "minimum_edited_area_fraction": 0.005
+  },
+  "input_resolutions": {
+    "classifier": [
+      224,
+      224
+    ],
+    "detector": [
+      640,
+      640
+    ],
+    "segmenter": [
+      640,
+      640
+    ]
+  },
+  "detector_AP_primary_input_coordinates": {
+    "class": "edited_region",
+    "instances": 95,
+    "AP50": 0.5749402370035912,
+    "AP50_95": 0.3671421893430065,
+    "AP_by_matching_iou": [
+      0.5749402370035912,
+      0.5533401788967016,
+      0.4972381817726303,
+      0.4811773367526388,
+      0.4487225564525536,
+      0.4190533358518752,
+      0.31824430892414135,
+      0.21573320864652,
+      0.13272895316645483,
+      0.030243595962958256
+    ],
+    "matching_ious": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "confidence_floor": 0.001,
+    "nms_iou": 0.45,
+    "max_det": 50,
+    "input_size": [
+      640,
+      640
+    ],
+    "coordinate_convention": "640 letterbox coordinates, before native clipping",
+    "metric_implementation": "Ultralytics8.3.221 BaseValidator.match_predictions + ap_per_class",
+    "internal_best_F1_threshold_PR_return_values_used": false
+  },
+  "detector_AP_secondary_served_native_coordinates": {
+    "class": "edited_region",
+    "instances": 95,
+    "AP50": 0.5749402370035912,
+    "AP50_95": 0.3689310468379577,
+    "AP_by_matching_iou": [
+      0.5749402370035912,
+      0.55352407041313,
+      0.4972381817726303,
+      0.4811773367526388,
+      0.46355379482973,
+      0.4190533358518752,
+      0.3211177539800486,
+      0.21573320864652,
+      0.13272895316645483,
+      0.030243595962958256
+    ],
+    "matching_ious": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "confidence_floor": 0.001,
+    "nms_iou": 0.45,
+    "max_det": 50,
+    "input_size": [
+      640,
+      640
+    ],
+    "coordinate_convention": "served native coordinates, clipped to image",
+    "metric_implementation": "Ultralytics8.3.221 BaseValidator.match_predictions + ap_per_class",
+    "internal_best_F1_threshold_PR_return_values_used": false
+  },
+  "detector_operating_metrics": {
+    "tp": 48,
+    "fp": 18,
+    "fn": 47,
+    "precision": 0.7272727272727273,
+    "recall": 0.5052631578947369,
+    "f1": 0.5962732919254659,
+    "confidence": 0.35,
+    "matching_iou": 0.5,
+    "duplicate_fp": 0,
+    "localisation_fp": 3,
+    "background_fp": 15,
+    "images": 114,
+    "recall_by_size": {
+      "small": {
+        "instances": 5,
+        "matched": 0,
+        "recall": 0.0
+      },
+      "medium": {
+        "instances": 26,
+        "matched": 2,
+        "recall": 0.07692307692307693
+      },
+      "large": {
+        "instances": 64,
+        "matched": 46,
+        "recall": 0.71875
+      }
+    }
+  },
+  "segmentation": {
+    "tp": 3520881,
+    "fp": 96212,
+    "fn": 120649,
+    "tn": 28518258,
+    "foreground_iou": 0.9419807466646976,
+    "foreground_dice": 0.9701236722171684,
+    "background_iou": 0.9924531024214656,
+    "mean_iou_2_classes": 0.9672169245430815,
+    "background_dice": 0.9962122583616334,
+    "mean_dice_2_classes": 0.983167965289401,
+    "pixel_precision": 0.9734007392124007,
+    "pixel_recall": 0.9668685964416056,
+    "pixel_accuracy": 0.9932768787202381,
+    "images": 114,
+    "edited_images": 95,
+    "pristine_images": 19,
+    "positive_image_mean_dice": 0.8618164919604663,
+    "positive_image_mean_iou": 0.800684492852988,
+    "pristine_images_with_any_false_foreground": 4,
+    "pristine_any_pixel_false_alarm_rate": 0.21052631578947367,
+    "pristine_mean_false_foreground_fraction": 0.0002420847039473684,
+    "mean_absolute_area_fraction_error": 0.003673236095882066,
+    "edited_median_relative_area_error": 0.04191093925408507
+  },
+  "segmentation_by_mask_size_at640": {
+    "small": {
+      "tp": 2071,
+      "fp": 1511,
+      "fn": 1261,
+      "tn": 1761557,
+      "foreground_iou": 0.42762750361346274,
+      "foreground_dice": 0.5990743419149551,
+      "background_iou": 0.9984288644578194,
+      "mean_iou_2_classes": 0.713028184035641,
+      "background_dice": 0.9992138146270185,
+      "mean_dice_2_classes": 0.7991440782709869,
+      "pixel_precision": 0.5781686208821887,
+      "pixel_recall": 0.6215486194477791,
+      "pixel_accuracy": 0.9984307065217392,
+      "images": 6,
+      "edited_images": 6,
+      "pristine_images": 0,
+      "positive_image_mean_dice": 0.40010451880197023,
+      "positive_image_mean_iou": 0.3257892688600604,
+      "pristine_images_with_any_false_foreground": 0,
+      "pristine_any_pixel_false_alarm_rate": null,
+      "pristine_mean_false_foreground_fraction": null,
+      "mean_absolute_area_fraction_error": 0.0011769386574074076,
+      "edited_median_relative_area_error": 0.7174149741258113
+    },
+    "medium": {
+      "tp": 120291,
+      "fp": 21446,
+      "fn": 20768,
+      "tn": 8746295,
+      "foreground_iou": 0.7402295313990339,
+      "foreground_dice": 0.850726318618368,
+      "background_iou": 0.9951966823951595,
+      "mean_iou_2_classes": 0.8677131068970967,
+      "background_dice": 0.997592559346543,
+      "mean_dice_2_classes": 0.9241594389824555,
+      "pixel_precision": 0.848691590763174,
+      "pixel_recall": 0.8527708263917935,
+      "pixel_accuracy": 0.9952615391522989,
+      "images": 32,
+      "edited_images": 32,
+      "pristine_images": 0,
+      "positive_image_mean_dice": 0.8016026293486864,
+      "positive_image_mean_iou": 0.6941259753268092,
+      "pristine_images_with_any_false_foreground": 0,
+      "pristine_any_pixel_false_alarm_rate": null,
+      "pristine_mean_false_foreground_fraction": null,
+      "mean_absolute_area_fraction_error": 0.002923210991753472,
+      "edited_median_relative_area_error": 0.17361031044168335
+    },
+    "large": {
+      "tp": 3398519,
+      "fp": 72027,
+      "fn": 98620,
+      "tn": 12635634,
+      "foreground_iou": 0.9521885504905068,
+      "foreground_dice": 0.9755087952454796,
+      "background_iou": 0.9866747418708054,
+      "mean_iou_2_classes": 0.969431646180656,
+      "background_dice": 0.9932926825673303,
+      "mean_dice_2_classes": 0.9844007389064049,
+      "pixel_precision": 0.9792462050639871,
+      "pixel_recall": 0.9717998054981515,
+      "pixel_accuracy": 0.9894693547590837,
+      "images": 57,
+      "edited_images": 57,
+      "pristine_images": 0,
+      "positive_image_mean_dice": 0.9442220260399034,
+      "positive_image_mean_iou": 0.9104957894283441,
+      "pristine_images_with_any_false_foreground": 0,
+      "pristine_any_pixel_false_alarm_rate": null,
+      "pristine_mean_false_foreground_fraction": null,
+      "mean_absolute_area_fraction_error": 0.005500788103070175,
+      "edited_median_relative_area_error": 0.021914460285132383
+    }
+  },
+  "image_review_referral": {
+    "tp": 86,
+    "fp": 5,
+    "fn": 9,
+    "tn": 14,
+    "images": 114,
+    "sensitivity": 0.9052631578947369,
+    "specificity": 0.7368421052631579,
+    "balanced_accuracy": 0.8210526315789474,
+    "precision": 0.945054945054945,
+    "edited_referral_f1": 0.9247311827956989,
+    "pristine_no_flag_f1": 0.6666666666666666,
+    "macro_f1": 0.7956989247311828,
+    "accuracy": 0.8771929824561403
+  },
+  "global_classifier_on_CSI_edited_proxy": {
+    "tp": 5,
+    "fp": 1,
+    "fn": 90,
+    "tn": 18,
+    "images": 114,
+    "sensitivity": 0.05263157894736842,
+    "specificity": 0.9473684210526315,
+    "balanced_accuracy": 0.5,
+    "precision": 0.8333333333333334,
+    "edited_referral_f1": 0.09900990099009901,
+    "pristine_no_flag_f1": 0.28346456692913385,
+    "macro_f1": 0.19123723395961645,
+    "accuracy": 0.20175438596491227,
+    "scope": "CSI local-edit proxy, not the original Phase1 generated-image test"
+  },
+  "reported_P_R_F1_use_frozen_operating_point": true,
+  "test_threshold_sweep_performed": false,
+  "AP_clipping_note": "Primary AP matches low-floor detections and GT in640 letterbox coordinates before clipping. Secondary AP scores native clipped boxes; clipping/rounding can change strict-IoU AP. Both derive from the same saved detector forward.",
+  "original_Phase1_test_reopened": false,
+  "protocol_sha256": "bcd076d95a56df90797e0c2c6946da430378159d3fb8ba45fd687b764b3672e7",
+  "source_family_bootstrap": {
+    "method": "source-family percentile bootstrap, resample whole source families",
+    "source_families": 19,
+    "repetitions": 1000,
+    "seed": 42,
+    "conditional_on_this_dataset_and_frozen_models": true,
+    "intervals95": {
+      "referral_accuracy": {
+        "lower": 0.8421052631578947,
+        "upper": 0.9124999999999998
+      },
+      "referral_macro_f1": {
+        "lower": 0.7360649766899767,
+        "upper": 0.8608058608058609
+      },
+      "referral_balanced_accuracy": {
+        "lower": 0.7315789473684211,
+        "upper": 0.9052631578947368
+      },
+      "foreground_iou": {
+        "lower": 0.9244255189833834,
+        "upper": 0.9549971035664399
+      },
+      "foreground_dice": {
+        "lower": 0.960728809573486,
+        "upper": 0.9769805815043838
+      }
+    },
+    "scope": "Sampling uncertainty among these source families; no domain-shift/generalization guarantee; no retraining or new forwards"
+  },
+  "test_evaluation_completed": true,
+  "saved_one_forward_per_branch_per_test_image": true
+}

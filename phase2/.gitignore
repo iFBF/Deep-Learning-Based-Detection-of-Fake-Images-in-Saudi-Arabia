@@ -1,0 +1,21 @@
+# Keep private data, model weights and prediction records outside this source tree.
+models/
+private_inputs/
+private_outputs/
+wandb/
+__pycache__/
+*.pyc
+*.pt
+*.pth
+*.onnx
+*.npz
+*.npy
+*.zip
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.avi
+*.mp4
+.env

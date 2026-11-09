@@ -1,0 +1,32 @@
+{
+  "preliminary_decision": "NO-GO for automatic authenticity decisions; human-review research demonstration only",
+  "original_Phase1_criteria_unchanged": true,
+  "Phase1_accuracy": {
+    "threshold": ">=90%",
+    "reported_selected_primary_test": "68.60%",
+    "passed": false
+  },
+  "Phase1_macro_F1": {
+    "threshold": ">=90%",
+    "reported_selected_primary_test": "65.72%",
+    "passed": false
+  },
+  "Phase1_condition": "Corrected selected full Swin; closed source-disjoint Phase1 test328; not re-evaluated by this notebook",
+  "Phase1_publication_commit": "26a12b0a69641990be2ef4b2794a19e420f87e20",
+  "new_Phase2_test_referral_metrics_are_a_different_target": {
+    "tp": 86,
+    "fp": 5,
+    "fn": 9,
+    "tn": 14,
+    "images": 114,
+    "sensitivity": 0.9052631578947369,
+    "specificity": 0.7368421052631579,
+    "balanced_accuracy": 0.8210526315789474,
+    "precision": 0.945054945054945,
+    "edited_referral_f1": 0.9247311827956989,
+    "pristine_no_flag_f1": 0.6666666666666666,
+    "macro_f1": 0.7956989247311828,
+    "accuracy": 0.8771929824561403
+  },
+  "final_presentation_verdict_and_scope": "Team must justify the final use decision with these results, model card and failure gallery"
+}

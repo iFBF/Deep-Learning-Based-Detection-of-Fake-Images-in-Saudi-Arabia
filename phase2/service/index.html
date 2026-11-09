@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real-Abshar · image review</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6f5;color:#152d28;font:16px system-ui,sans-serif}
+main{max-width:1000px;margin:36px auto;padding:24px}header{border-bottom:1px solid #c9d6d1;padding-bottom:22px}
+small{letter-spacing:.1em;color:#45695c}h1{font-size:40px;margin:10px 0}p{line-height:1.55}
+section{background:white;border:1px solid #d6dfda;border-radius:14px;padding:22px;margin-top:22px}
+button{background:#17634f;color:white;border:0;border-radius:8px;padding:12px 24px;font-size:16px;cursor:pointer}
+button:disabled{opacity:.5;cursor:wait}input{max-width:100%;padding:12px 0}canvas{max-width:100%;height:auto;border-radius:8px}
+.notice{background:#fff6df;border-left:4px solid #a87714;padding:12px}.stats{display:flex;gap:16px;flex-wrap:wrap}
+.stat{flex:1;min-width:180px;padding:16px;background:#eff5f1;border-radius:10px}.stat b{display:block;font-size:24px;margin-top:6px}
+pre{white-space:pre-wrap;word-break:break-word;font-size:13px;color:#304c42}.legend{font-size:14px;color:#45695c}
+</style>
+<main><header><small>REAL-ABSHAR / COMPUTER VISION CAPSTONE</small><h1>Review image evidence.</h1>
+<p>Inspect the global model score, detected editing regions and pixel mask together.</p></header>
+<section><form id="form"><label for="file">Choose one JPEG, PNG or WebP image</label><br>
+<input id="file" type="file" accept="image/jpeg,image/png,image/webp" required><br>
+<button id="submit" type="submit">Analyze image</button></form><p id="status" role="status"></p>
+<p class="legend">Still images only · file up to 10 MiB · up to 12 million pixels · minimum 16 pixels on each side.</p></section>
+<section id="results" hidden><p class="notice" id="decision"></p><div class="stats">
+<div class="stat">Global model label<b id="label"></b></div><div class="stat">Edited-area estimate<b id="area"></b></div>
+<div class="stat">Detected regions<b id="boxes"></b></div></div><p class="legend">Red: predicted mask pixels. Green: selected detector boxes. Mask pixels remain visible below the review-area threshold.</p>
+<canvas id="canvas"></canvas><details><summary>Model output</summary><pre id="json"></pre></details></section>
+<p class="notice">Research prototype for human review. A “Real” model label or “no model flag” does not establish authenticity. Scores are uncalibrated; small edits can be missed.</p></main>
+<script>
+const $=id=>document.getElementById(id); const loadImage=src=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>resolve(im);im.onerror=reject;im.src=src});
+$('form').addEventListener('submit',async event=>{event.preventDefault();const file=$('file').files[0];if(!file)return;
+$('submit').disabled=true;$('status').textContent='Running the three models…';$('results').hidden=true;
+let objectURL;try{const form=new FormData();form.append('file',file);const response=await fetch('predict',{method:'POST',body:form});const result=await response.json();
+if(!response.ok)throw new Error(result.error?.message||'The request could not be completed.');
+$('decision').textContent=result.decision.status==='review_recommended'?'Review recommended. Reasons: '+result.decision.reasons.join(', '):'No model flag. This does not establish authenticity.';
+$('label').textContent=result.classifier.label+' (model)';$('area').textContent=(100*result.mask.edited_area_fraction).toFixed(2)+'%';$('boxes').textContent=String(result.detections.length);
+objectURL=URL.createObjectURL(file);const [source,mask]=await Promise.all([loadImage(objectURL),loadImage('data:image/png;base64,'+result.mask.png_base64)]);
+const canvas=$('canvas');canvas.width=result.image.width;canvas.height=result.image.height;const ctx=canvas.getContext('2d');ctx.drawImage(source,0,0,canvas.width,canvas.height);
+const layer=document.createElement('canvas');layer.width=canvas.width;layer.height=canvas.height;const lctx=layer.getContext('2d');lctx.drawImage(mask,0,0);const pixels=lctx.getImageData(0,0,layer.width,layer.height);
+for(let i=0;i<pixels.data.length;i+=4){const fg=pixels.data[i]>0;pixels.data[i]=230;pixels.data[i+1]=60;pixels.data[i+2]=55;pixels.data[i+3]=fg?100:0}lctx.putImageData(pixels,0,0);ctx.drawImage(layer,0,0);
+ctx.strokeStyle='#13a879';ctx.lineWidth=Math.max(2,canvas.width/300);for(const d of result.detections){const [x0,y0,x1,y1]=d.box;ctx.strokeRect(x0,y0,x1-x0,y1-y0)}
+const compact={...result,mask:{...result.mask,png_base64:'[native-size 0/1 PNG omitted from this text preview]'}};
+$('json').textContent=JSON.stringify(compact,null,2);$('results').hidden=false;$('status').textContent='Analysis complete.';
+}catch(error){$('status').textContent=error.message||'The request failed.'}finally{if(objectURL)URL.revokeObjectURL(objectURL);$('submit').disabled=false}});
+</script></html>

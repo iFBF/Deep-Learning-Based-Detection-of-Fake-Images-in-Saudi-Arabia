@@ -1,0 +1,147 @@
+{
+  "release_id": "real-abshar-m8-fbaa1c95818d",
+  "stage": "service_candidate_before_reserved_test",
+  "models": {
+    "classifier": {
+      "file": "models/classifier.onnx",
+      "sha256": "32cb5ce78c63aeb0061b5dd659f33b85c6a38918993670596b777aa79701abd3",
+      "bytes": 351810074,
+      "input_shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "output_shape": [
+        1,
+        2
+      ],
+      "native_checkpoint_sha256": "a2fd5d5ec37c1bcf2a9fc6243115306aadc987fa3404d6945a5fd97961d5504e"
+    },
+    "detector": {
+      "file": "models/detector.onnx",
+      "sha256": "c561e4415b5b70cfdb3212e4bc36d689e6b0fb6bd81a99d95498e339e2a3d1f6",
+      "bytes": 10564809,
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        5,
+        8400
+      ],
+      "native_checkpoint_sha256": "66b440225fa64a30ef035706ddde8d01489476a1c3331f2d289655b5be9afb40"
+    },
+    "segmenter": {
+      "file": "models/segmenter.onnx",
+      "sha256": "adbd15c123a94c26a74f9edfc8155fa8ee419ae73b9de49ff388cd55aca5bf13",
+      "bytes": 49846361,
+      "input_shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "output_shape": [
+        1,
+        1,
+        640,
+        640
+      ],
+      "native_checkpoint_sha256": "301cae566f84ec9ffa7753373320e90bb9a0af70d64e85a8d3d89b2a92481b2c"
+    }
+  },
+  "class_names": {
+    "classifier": [
+      "Real",
+      "Fake"
+    ],
+    "detector": [
+      "edited_region"
+    ],
+    "segmenter": [
+      "background",
+      "edited_region"
+    ]
+  },
+  "phase1_code_commit": "26a12b0a69641990be2ef4b2794a19e420f87e20",
+  "phase2_publication_commit": null,
+  "source_export_artifact": "f1k80-kaust/Real-Abshar-Phase2/real-abshar-m8-export-b90893924c38:v0",
+  "batch": 1,
+  "precision": "FP32",
+  "cohort": "csi-complete-aligned-families-v1",
+  "runtime": {
+    "provider": "CPUExecutionProvider",
+    "transformers": "5.16.1",
+    "onnxruntime": "1.31.1",
+    "torch_intra_threads": 2,
+    "torch_inter_threads": 1,
+    "ort_intra_threads": 2,
+    "ort_inter_threads": 1,
+    "ort_execution_mode": "sequential",
+    "workers": 1
+  },
+  "input_contract": {
+    "formats": [
+      "JPEG",
+      "PNG",
+      "WEBP"
+    ],
+    "max_file_bytes": 10485760,
+    "max_pixels": 12000000,
+    "min_side": 16,
+    "color": "EXIF-transposed RGB",
+    "animated_images": "reject"
+  },
+  "preprocessing": {
+    "classifier": {
+      "processor_directory": "classifier",
+      "backend": "torchvision",
+      "size": 224
+    },
+    "detector": {
+      "size": 640,
+      "padding_value": 114,
+      "interpolation": "OpenCV linear",
+      "scale_divisor": 255.0
+    },
+    "segmenter": {
+      "size": 640,
+      "padding_value": 0,
+      "interpolation": "PIL bilinear",
+      "scale_divisor": 255.0,
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    }
+  },
+  "thresholds": {
+    "classifier_fake_threshold": 0.5,
+    "detector_confidence": 0.35,
+    "detector_nms_iou": 0.45,
+    "detector_max_detections": 50,
+    "segmenter_pixel_threshold": 0.5,
+    "minimum_edited_area_fraction": 0.005
+  },
+  "detector_confidence_comparator": ">",
+  "segmenter_pixel_comparator": ">=",
+  "segmenter_postprocessing": "none",
+  "mask_restoration": "Crop letterbox; PIL float bilinear to native dimensions; threshold after restoration",
+  "decision_rule": "classifier_flag OR any_selected_detector_box OR edited_area_flag",
+  "policy_sha256": "33c3c42ed7aca218d570f7295943960b62b1aff3ea56190789d369f59f23cbc0",
+  "branch_execution": "Always execute classifier, detector and segmenter; no classifier/detector gating",
+  "retention": "No user-image/prediction retention by the service; uploaded temporary files are closed after each request",
+  "test_evaluated": false,
+  "final_test_must_require": "evidence/service_validation_gate.json all_checks_passed=true",
+  "scope": "Research prototype for human review; no proof of authenticity, no Saudi deployment-performance claim"
+}

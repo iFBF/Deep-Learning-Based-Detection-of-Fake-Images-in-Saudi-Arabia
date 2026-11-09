@@ -1,0 +1,8 @@
+{
+  "stage": "M5_completed",
+  "artifact": "f1k80-kaust/Real-Abshar-Phase2/real-abshar-m5-backup-6ea92ac6178c:v15",
+  "url": "https://wandb.ai/f1k80-kaust/Real-Abshar-Phase2/artifacts/model/real-abshar-m5-backup-6ea92ac6178c/v15",
+  "confirmed_utc": "2026-11-09T00:51:37.205916+00:00",
+  "file_count": 48,
+  "dataset_images_or_masks_included": false
+}
