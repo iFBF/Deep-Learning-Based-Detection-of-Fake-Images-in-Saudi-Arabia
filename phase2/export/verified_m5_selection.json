@@ -1,0 +1,46 @@
+{
+  "selected_architecture": "B_UNet_ResNet18",
+  "checkpoint_sha256": "301cae566f84ec9ffa7753373320e90bb9a0af70d64e85a8d3d89b2a92481b2c",
+  "model_file_in_archive": "models/B_UNet_ResNet18.pt",
+  "input_size": [
+    640,
+    640
+  ],
+  "probability_threshold": 0.5,
+  "postprocessing": "none",
+  "selection_split": "val",
+  "cohort_uid_sha256": "c24eb30ac2269840eb4f92e5ada2870493e7624c211a96cb8791d80ce8f40476",
+  "validation_metrics": {
+    "threshold": 0.5,
+    "tp": 4165928,
+    "fp": 181022,
+    "fn": 131418,
+    "tn": 32201312,
+    "foreground_iou": 0.9302335136371107,
+    "foreground_dice": 0.9638559345954836,
+    "background_iou": 0.990390527675797,
+    "mean_iou_2_classes": 0.9603120206564539,
+    "background_dice": 0.9951720668931117,
+    "mean_dice_2_classes": 0.9795140007442976,
+    "pixel_precision": 0.9583565488445922,
+    "pixel_recall": 0.9694187994171286,
+    "pixel_accuracy": 0.9914819322305974,
+    "images": 126,
+    "edited_images": 105,
+    "pristine_images": 21,
+    "positive_image_mean_dice": 0.8406996727516122,
+    "positive_image_mean_iou": 0.7830943828238205,
+    "pristine_images_with_any_false_foreground": 7,
+    "pristine_any_pixel_false_alarm_rate": 0.3333333333333333,
+    "pristine_mean_false_foreground_fraction": 0.002140428654100529,
+    "mean_absolute_area_fraction_error": 0.0054339560139256326,
+    "edited_median_relative_area_error": 0.05046811000585138
+  },
+  "prediction_values": [
+    0,
+    1
+  ],
+  "test_evaluation_performed": false,
+  "integration_note": "Run segmentation independently of detector presence; do not gate on a detection.",
+  "scope": "132-family CSI complete aligned subset; binary edit/inpainting regions; not Saudi deployment performance"
+}

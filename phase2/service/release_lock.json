@@ -1,0 +1,29 @@
+{
+  "manifest_sha256": "b06365983742f70d42f7ae6ff02eb805a7776f6ea02eabc816b5b4386f83133f",
+  "source_and_config_sha256": {
+    "app.py": "878b8c213c28e666276322393cc938524decf474b6da14055550bc7da813edc9",
+    "serve.py": "d52946cd19bc9009734b8aef25c634fd8c0e2237cd1c4bae6848a41d666a7aa6",
+    "service_runtime.py": "636b99fb11dbd0d505495e1ad3afb9b50a3a195580748287b79df95572d8df1c",
+    "service_decision.py": "14d115754341ba00e9daa22a700e6c2c5fb6d082a76317f4afab3358b1173521",
+    "service_geometry.py": "1c7cf3b8f40d8e2d03a2a29ad115bfb70b66012808bf0977a78ccbbca0cf4e16",
+    "service_assets.py": "f503e71f152389874572b67cb937bbc52bc744943c826652ae333f5e94286252",
+    "service_benchmark.py": "ff3bf78e0d1bc17914335d089ab127cb0b68109f70d08738122fece165123901",
+    "service_demo.py": "c8d5f29083a0f82cc6785bc0fe1017d303d590fc53769489922065a37ed94be8",
+    "m8_service_run.py": "e2589df27ec83a0cb9ac63b32d5f879f95b860b6f7c27f74c178f4261a9d02dc",
+    "service_backup.py": "4c26e47d37550c41f3b6b2efe4987fed1aa574afa671a1d3a0673ea1880f3056",
+    "cohort_data.py": "9775cc7157574058da29046a93beb2d207b089167821e040edefcd70c941714e",
+    "segmentation_data.py": "127739241c2088ae2cc7c6f3233bc1087e479036ff426348e313eec2db58dae4",
+    "segmentation_metrics.py": "c93daa643845646a3ac16cb02456856bab088b7a414932bb8d0a37ed74e53370",
+    "export_metrics.py": "f8559e90e256204ad09f56501e14d56b858f92bc901751507dc99e39b496f222",
+    "index.html": "88062e035e2fc5f8496483d3e72f03790fb6b97d5cf1968a41c46750aa1bf9da",
+    "RUN_LOCAL.md": "e17d59a2dc08865591ffb48c8eb89fb5ba6c40fa1be33036cc5d16d56bd4bb54",
+    "MODEL_CARD.md": "bf5557740b02895690276a5d8852c3f3dba31850ce39d7adabd83912eeef462c",
+    "requirements_serve.txt": "abdd8dbb21f6512b6585ed5fbd15131eb5da6c475bfc063fb47285bfc7e804f9",
+    "requirements_benchmark.txt": "2fc2eebdd334401d8827877934eac8338cc3ae7fa1cf64560baa7e540f44c806",
+    "M8_EXPORT_REVIEW.md": "0387caad15a0be017eebeceb9d1f61f155a52471cf8e83b8ba102af4a3eb46e7",
+    "classifier/config.json": "f2edf5008a5a9eb91e53d17b42346f8d1d5e1b1d35f3a25989101d347b0c1e92",
+    "classifier/preprocessor_config.json": "4e7237090fabd3b45f5b3e94d10fe2d0290b6d2ab9a73d2d1bd6c701e5db57e9",
+    "decision_policy.json": "33c3c42ed7aca218d570f7295943960b62b1aff3ea56190789d369f59f23cbc0"
+  },
+  "test_evaluated": false
+}

@@ -1,0 +1,165 @@
+{
+  "backend": "ONNX Runtime / CPUExecutionProvider through FastAPI HTTP",
+  "precision": "FP32",
+  "batch": 1,
+  "concurrency": 1,
+  "server_processes": 1,
+  "timed_requests": 126,
+  "warmup_requests": 10,
+  "additional_startup_smoke_requests": 1,
+  "split": "val",
+  "source_families": 21,
+  "classifier_input": [
+    224,
+    224
+  ],
+  "region_model_input": [
+    640,
+    640
+  ],
+  "native_uploads": "reviewed lossless PNGs at native dimensions",
+  "stages": [
+    {
+      "stage": "http_client_ms",
+      "p50_ms": 922.9524985000808,
+      "p95_ms": 963.7071327499029,
+      "p99_ms": 982.3344817500583,
+      "mean_ms": 922.6691434761892
+    },
+    {
+      "stage": "http_handler_ms",
+      "p50_ms": 920.058506,
+      "p95_ms": 960.471608,
+      "p99_ms": 978.997429,
+      "mean_ms": 919.4596367222224
+    },
+    {
+      "stage": "decode_ms",
+      "p50_ms": 13.414633000024878,
+      "p95_ms": 15.498340749900308,
+      "p99_ms": 17.09030099999609,
+      "mean_ms": 13.24042473808031
+    },
+    {
+      "stage": "preprocess_ms",
+      "p50_ms": 18.644977500002824,
+      "p95_ms": 20.43994025007123,
+      "p99_ms": 20.878721499968833,
+      "mean_ms": 18.419023222221885
+    },
+    {
+      "stage": "classifier_inference_ms",
+      "p50_ms": 310.705703999929,
+      "p95_ms": 350.5603467499441,
+      "p99_ms": 370.99131999997326,
+      "mean_ms": 315.3714030396793
+    },
+    {
+      "stage": "detector_inference_ms",
+      "p50_ms": 123.19524199995158,
+      "p95_ms": 127.32710150004323,
+      "p99_ms": 134.11010850001048,
+      "mean_ms": 113.79444135713713
+    },
+    {
+      "stage": "segmenter_inference_ms",
+      "p50_ms": 455.24426549991404,
+      "p95_ms": 468.41001724999387,
+      "p99_ms": 500.4370632500468,
+      "mean_ms": 451.45549950792963
+    },
+    {
+      "stage": "postprocess_and_decision_ms",
+      "p50_ms": 3.67952899989632,
+      "p95_ms": 3.9733915000397246,
+      "p99_ms": 4.019831249991057,
+      "mean_ms": 3.6668813174729724
+    },
+    {
+      "stage": "mask_encoding_ms",
+      "p50_ms": 2.7365519999875687,
+      "p95_ms": 3.5649860000717126,
+      "p99_ms": 3.780414749883221,
+      "mean_ms": 2.782441277777108
+    },
+    {
+      "stage": "pipeline_total_ms",
+      "p50_ms": 919.4116794999445,
+      "p95_ms": 959.7820329999536,
+      "p99_ms": 978.3559359999003,
+      "mean_ms": 918.7946110634913
+    },
+    {
+      "stage": "queue_wait_ms",
+      "p50_ms": 0.0014144999340715003,
+      "p95_ms": 0.0024247501073659805,
+      "p99_ms": 0.006288499889706145,
+      "mean_ms": 0.0016211904819231546
+    }
+  ],
+  "serial_active_request_throughput_images_per_second": 1.0838121195128125,
+  "memory": {
+    "method": "psutil RSS of the separate serving process sampled every0.05s during timed HTTP calls",
+    "loaded_process_rss_before_timing_MiB": 1413.73828125,
+    "peak_sampled_process_rss_MiB": 1413.76171875,
+    "samples": 2353,
+    "includes": "runtime, loaded model sessions, preprocessing and inference allocations; excludes benchmark client process",
+    "limitation": "Sampled RSS can miss short peaks; this is not GPU-memory measurement."
+  },
+  "client_timer_includes": "multipart upload, loopback HTTP, server processing, response body transfer and client JSON parsing",
+  "client_timer_excludes": "source-file disk reads, validation GT/mask decoding, plotting, UI rendering and model startup",
+  "pipeline_timer_includes": "decode, all preprocessing, three sequential model forwards, postprocessing, decision and PNG/base64 mask encoding",
+  "pipeline_timer_excludes": "request upload/parsing, queue wait, final JSON serialization and network response transfer",
+  "throughput_definition": "N divided by summed timed client request durations, concurrency1; no network/load scalability claim",
+  "percentile_method": "numpy.percentile default linear method;126 correlated validation images; exploratory tail estimates, not a load-test guarantee",
+  "health": {
+    "status": "ready",
+    "release_id": "real-abshar-m8-fbaa1c95818d",
+    "provider": "CPUExecutionProvider",
+    "model_sha256": {
+      "classifier": "32cb5ce78c63aeb0061b5dd659f33b85c6a38918993670596b777aa79701abd3",
+      "detector": "c561e4415b5b70cfdb3212e4bc36d689e6b0fb6bd81a99d95498e339e2a3d1f6",
+      "segmenter": "adbd15c123a94c26a74f9edfc8155fa8ee419ae73b9de49ff388cd55aca5bf13"
+    },
+    "startup_self_test_passed": true,
+    "startup_seconds": 4.649804765999988,
+    "batch": 1,
+    "precision": "FP32",
+    "startup_seconds_scope": "model/config/session/processor checks plus smoke; excludes Python imports and server boot",
+    "class_names": {
+      "classifier": [
+        "Real",
+        "Fake"
+      ],
+      "detector": [
+        "edited_region"
+      ],
+      "segmenter": [
+        "background",
+        "edited_region"
+      ]
+    },
+    "thresholds": {
+      "classifier_fake_threshold": 0.5,
+      "detector_confidence": 0.35,
+      "detector_nms_iou": 0.45,
+      "detector_max_detections": 50,
+      "segmenter_pixel_threshold": 0.5,
+      "minimum_edited_area_fraction": 0.005
+    },
+    "input_contract": {
+      "formats": [
+        "JPEG",
+        "PNG",
+        "WEBP"
+      ],
+      "max_file_bytes": 10485760,
+      "max_pixels": 12000000,
+      "min_side": 16,
+      "color": "EXIF-transposed RGB",
+      "animated_images": "reject"
+    },
+    "one_process_one_inference_at_a_time": true
+  },
+  "test_evaluated": false
+}

@@ -31,3 +31,9 @@ Keep the model ZIP and executed notebook. Return the smaller results ZIP for com
 - [Original main-run notebook](notebooks/phase1_corrections_kaggle.ipynb)
 
 Team: Fahad Falah H. AlQahtani, Anoud Mohammd A. Alenzei, Abdulaziz Salim AlQahtani.
+
+## Phase 2: localization and integrated service
+
+The fixed Phase2 test is complete on114 images from19 source families. The selected detector reaches57.49% AP50/36.71% AP50–95; the selected segmenter reaches94.20% foreground IoU/97.01% pooled foreground Dice. The integrated human-review policy reaches87.72% accuracy and79.57% macro-F1. These are CSI local-edit measurements and do not replace the original Phase1 criteria or establish Saudi operational accuracy.
+
+See the [Phase2 source and reproduction map](phase2/README.md), [verified results and conditions](phase2/VERIFIED_RESULTS.md), [final model card](phase2/MODEL_CARD.md), and [working local service instructions](phase2/RUN_LOCAL.md). Public source includes aggregate results; dataset images/annotations, private per-image caches, weights and student personal details are excluded. The preliminary verdict remains NO-GO for automatic authenticity decisions.

@@ -1,0 +1,14 @@
+{
+  "selected_mode": "full",
+  "criterion": "minimum unweighted validation cross-entropy",
+  "protocol_sha256": "0544ea4ee4940c56874855021b0f0a5873f121ddeaf26c4880894374529eeb8b",
+  "selected_checkpoint_sha256": "a2fd5d5ec37c1bcf2a9fc6243115306aadc987fa3404d6945a5fd97961d5504e",
+  "all_checkpoint_hashes": {
+    "scratch_unweighted": "67b340f574c0fa7e490ca2a26aec3d490bfb7f245faf6e5f6800253e4274c021",
+    "scratch": "5ed0539a0832b33a5beb4072e7750085e9de0de38eec8030b72a2cfcd2b778e2",
+    "frozen": "62f93f52a09e81b1f90b4558df3d7e3a42b8a2deb4ebf7079678450882b2bdd5",
+    "full": "a2fd5d5ec37c1bcf2a9fc6243115306aadc987fa3404d6945a5fd97961d5504e"
+  },
+  "locked_at_utc": "2026-11-08T08:04:26.382898+00:00",
+  "config_sha256": "c4570d4f3fe07c2a37bf888047b6216854dfb5f0bef8712f85a1f7a30a45acc2"
+}

@@ -1,0 +1,11 @@
+{
+  "release_id": "real-abshar-m8-fbaa1c95818d",
+  "protocol_sha256": "bcd076d95a56df90797e0c2c6946da430378159d3fb8ba45fd687b764b3672e7",
+  "service_manifest_sha256": "b06365983742f70d42f7ae6ff02eb805a7776f6ea02eabc816b5b4386f83133f",
+  "test_completed": true,
+  "test_images": 114,
+  "source_families": 19,
+  "thresholds_changed_on_test": false,
+  "artifact": "f1k80-kaust/Real-Abshar-Phase2/real-abshar-phase2-final-c24eb30ac226:v19",
+  "scope": "Completion is an addendum to the unchanged, hash-locked pre-test service manifest; its historical test_evaluated=false value is intentionally preserved."
+}

@@ -1,0 +1,78 @@
+{
+  "split": "val",
+  "images": 126,
+  "source_families": 21,
+  "input_resolutions": {
+    "classifier": [
+      224,
+      224
+    ],
+    "region_models": [
+      640,
+      640
+    ]
+  },
+  "thresholds": {
+    "classifier_fake_threshold": 0.5,
+    "detector_confidence": 0.35,
+    "detector_nms_iou": 0.45,
+    "detector_max_detections": 50,
+    "segmenter_pixel_threshold": 0.5,
+    "minimum_edited_area_fraction": 0.005
+  },
+  "checks": {
+    "all126_http_requests_200": true,
+    "classifier_score_max_error_le_1e_minus5": true,
+    "detector_box_agreement_ge_0.99": true,
+    "native_mask_area_max_difference_le_2pixels": true,
+    "foreground_iou_difference_le_0.0005": true,
+    "same_review_decisions_as_selected_cache": true,
+    "HTTP_contract_checks_passed": true
+  },
+  "all_checks_passed": true,
+  "detector_detection_agreement": 1.0,
+  "maximum_classifier_score_abs_error": 0.0,
+  "maximum_foreground_pixel_count_difference": 0,
+  "segmentation_metrics": {
+    "tp": 4165927,
+    "fp": 181022,
+    "fn": 131419,
+    "tn": 32201312,
+    "foreground_iou": 0.9302332903414815,
+    "foreground_dice": 0.9638558147309874,
+    "background_iou": 0.9903904972151323,
+    "mean_iou_2_classes": 0.9603118937783068,
+    "background_dice": 0.995172051515362,
+    "mean_dice_2_classes": 0.9795139331231747,
+    "pixel_precision": 0.9583565392646659,
+    "pixel_recall": 0.9694185667153634,
+    "pixel_accuracy": 0.9914819049675461,
+    "images": 126,
+    "edited_images": 105,
+    "pristine_images": 21,
+    "positive_image_mean_dice": 0.8406972599919215,
+    "positive_image_mean_iou": 0.7830914875032603,
+    "pristine_images_with_any_false_foreground": 7,
+    "pristine_any_pixel_false_alarm_rate": 0.3333333333333333,
+    "pristine_mean_false_foreground_fraction": 0.0021404286541005287,
+    "mean_absolute_area_fraction_error": 0.005433999072236919,
+    "edited_median_relative_area_error": 0.05046811000585138
+  },
+  "referral_metrics": {
+    "tp": 96,
+    "fp": 2,
+    "fn": 9,
+    "tn": 19,
+    "images": 126,
+    "sensitivity": 0.9142857142857143,
+    "specificity": 0.9047619047619048,
+    "balanced_accuracy": 0.9095238095238095,
+    "precision": 0.9795918367346939,
+    "edited_referral_f1": 0.9458128078817734,
+    "pristine_no_flag_f1": 0.7755102040816326,
+    "macro_f1": 0.860661505981703,
+    "accuracy": 0.9126984126984127
+  },
+  "test_evaluated": false,
+  "video_replay_completed": true
+}
