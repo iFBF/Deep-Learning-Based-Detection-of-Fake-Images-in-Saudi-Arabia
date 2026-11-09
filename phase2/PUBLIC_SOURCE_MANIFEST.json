@@ -196,28 +196,28 @@
     "bytes": 605
   },
   "results/test_detector_AP_by_iou.csv": {
-    "sha256": "433f9ec1bc6704ad34ea2f4769d51c98e2bf796b23cfd625e0291637e4e97ab3",
-    "bytes": 264
+    "sha256": "4585fd9cab7bcc2f4fe1aae591130d164767884d3cf8d20df651b7050f708259",
+    "bytes": 253
   },
   "results/test_detector_error_taxonomy.csv": {
-    "sha256": "94dadefb3ffda7c479b3d79c6a2271046a17ad096110a96bee5ddb567aa3cef4",
-    "bytes": 173
+    "sha256": "6c3d3684d6bf856435f94525c5c9fdc366751c0e9dc6d90df59f1f49c8afec46",
+    "bytes": 167
   },
   "results/test_detector_size_recall.csv": {
-    "sha256": "66576e693b78f247f9faa13093a665dfe97cbeca5e25f720219c6770b0ae1e34",
-    "bytes": 100
+    "sha256": "f0c153beb6ab5f3d85d74df2eaff7b5fe21d322dcf398abec2333b00e35f21d9",
+    "bytes": 96
   },
   "results/test_metrics.json": {
     "sha256": "de9545389a726a8a7cf991221dea987df9120f44a4b1ad756946393d893b04ff",
     "bytes": 9546
   },
   "results/test_segmentation_per_class.csv": {
-    "sha256": "597446833c315cef81955eed808bfeca9da087f0632e5219ba2214661b5c6534",
-    "bytes": 119
+    "sha256": "a318a66f1709c742ca5773d1dedea174ae82d74c347e9cb81e6ea7a6b767bf7a",
+    "bytes": 116
   },
   "results/test_segmentation_size_slices.csv": {
-    "sha256": "7cbede5b570408912e71d8205ede693a58e25a95952e3280edf88617db0fb3d1",
-    "bytes": 1318
+    "sha256": "bb8a13f53729914764e011ea21630044536ab250911924f13f5b7b491bacb437",
+    "bytes": 1314
   },
   "results/validation_metrics.json": {
     "sha256": "5da21ca2347ec30bed478de00cc32b1912a7b50b95c3e989d2d6c9de3a96206a",
