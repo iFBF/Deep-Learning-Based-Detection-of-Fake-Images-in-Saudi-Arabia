@@ -1,8 +1,8 @@
-# Real-Absher — real / AI-generated image detection
+# Real-Abshar — image generation and local-edit screening
 
 The corrected Phase 1 main experiment is complete. On the source-disjoint 328-image DFGAN test, the validation-selected full model scores **68.60% accuracy (95% group-bootstrap CI 62.54–74.56%)** and **65.72% macro-F1**. The frozen comparison scores 88.72% accuracy and 85.02% macro-F1. Model selection remains based on validation cross-entropy; these test results document a generator-generalization limitation.
 
-See the [verified results and limitations](docs/phase1_corrections/VERIFIED_RESULTS.md) and [corrections/data guide](docs/phase1_corrections/README.md). The results archive passed 165 consistency checks. Another member's independent execution is still pending.
+See the [verified results and limitations](docs/phase1_corrections/VERIFIED_RESULTS.md) and [corrections/data guide](docs/phase1_corrections/README.md). The results archive passed 165 consistency checks. A teammate supplied an operator-labelled reproduction archive on 14 November. Its saved results agree with the main run; static files alone do not authenticate fresh training. See the report's reproduction audit.
 
 ## Check the recorded results without a GPU
 
@@ -37,3 +37,7 @@ Team: Fahad Falah H. AlQahtani, Anoud Mohammd A. Alenzei, Abdulaziz Salim AlQaht
 The fixed Phase2 test is complete on114 images from19 source families. The selected detector reaches57.49% AP50/36.71% AP50–95; the selected segmenter reaches94.20% foreground IoU/97.01% pooled foreground Dice. The integrated human-review policy reaches87.72% accuracy and79.57% macro-F1. These are CSI local-edit measurements and do not replace the original Phase1 criteria or establish Saudi operational accuracy.
 
 See the [Phase2 source and reproduction map](phase2/README.md), [verified results and conditions](phase2/VERIFIED_RESULTS.md), [final model card](phase2/MODEL_CARD.md), and [working local service instructions](phase2/RUN_LOCAL.md). Public source includes aggregate results; dataset images/annotations, private per-image caches, weights and student personal details are excluded. The preliminary verdict remains NO-GO for automatic authenticity decisions.
+
+## V3.1 research extension and Windows portal
+
+[Research source, development evidence and model credit](phase2/research/v31/README.md) and [local portal instructions](phase2/research/v31/RUN_LOCAL.md) now accompany the frozen Phase 2 system. The supplemental detector is externally trained, not a team-trained checkpoint. V3.1 is validation-selected; the original closed-test results above remain unchanged. Its known-image Windows smoke result is integration evidence, not a new performance evaluation.

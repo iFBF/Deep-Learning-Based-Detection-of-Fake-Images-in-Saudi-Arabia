@@ -27,3 +27,7 @@ Open http://127.0.0.1:8000/ for the image form, http://127.0.0.1:8000/health for
 The benchmark and HTTP contract tests were actually run on Kaggle Linux CPU; Windows commands are provided for reproduction and were not benchmarked here. The frozen `service/RUN_LOCAL.md` has additional contract/curl/timer detail. The restoration helper copies only the three hash-checked graphs. No W&B login is needed after setup and no training is performed.
 
 The copied source/configuration hashes and three model hashes are checked at startup. Preserve the historical frozen manifest and lock unchanged. Final evaluation completion is recorded separately in `results/completed_evaluation.json` and the final model card.
+
+## Windows UTF-8 and V3.1 portal
+
+Use `python -X utf8 phase2/service/serve.py --release phase2/service --port 8000` on Windows so the unchanged HTML is decoded as UTF-8. If `/health` already returns the expected ready release, reuse that service. See [V3.1 run instructions](research/v31/RUN_LOCAL.md) for the separate comparison portal on port 8001. It uses a separate client environment with pinned Pillow 12.3.0; this does not rewrite the original benchmark environment or frozen runtime.

@@ -1,0 +1,586 @@
+{
+  "scope": "Global development flags and separate CSI validation referrals. No new independent test.",
+  "original_global_validation_images": 233,
+  "additional_development_images": 72,
+  "additional_scene_series_groups": 14,
+  "global_inputs": {
+    "Swin": [
+      224,
+      224
+    ],
+    "CLIP_V2": [
+      224,
+      224
+    ],
+    "supplemental": [
+      384,
+      384
+    ]
+  },
+  "global_thresholds": {
+    "baseline_swin": 0.5,
+    "V2_probability": 0.5,
+    "V3_swin": 0.99,
+    "V3_raw": 4.0,
+    "V31_swin": 0.99,
+    "V31_raw": 4.25
+  },
+  "baseline": {
+    "validation_original": {
+      "n": 233,
+      "accuracy": 0.9957081545064378,
+      "macro_f1": 0.9953337472212764,
+      "balanced_accuracy": 0.9966666666666666,
+      "fake_recall": 0.9933333333333333,
+      "real_recall": 1.0,
+      "log_loss": 0.016354488084268204,
+      "brier": 0.0049975538276023,
+      "confusion_matrix": [
+        [
+          83,
+          0
+        ],
+        [
+          1,
+          149
+        ]
+      ]
+    },
+    "validation_self72": {
+      "n": 72,
+      "accuracy": 0.4722222222222222,
+      "macro_f1": 0.36134453781512604,
+      "balanced_accuracy": 0.4722222222222222,
+      "fake_recall": 0.05555555555555555,
+      "real_recall": 0.8888888888888888,
+      "log_loss": 2.9849473461085347,
+      "brier": 0.4826374641604719,
+      "confusion_matrix": [
+        [
+          32,
+          4
+        ],
+        [
+          34,
+          2
+        ]
+      ]
+    }
+  },
+  "rejected_V2": {
+    "validation_original": {
+      "n": 233,
+      "accuracy": 0.9313304721030042,
+      "macro_f1": 0.9262774877392818,
+      "balanced_accuracy": 0.9332128514056225,
+      "fake_recall": 0.9266666666666666,
+      "real_recall": 0.9397590361445783,
+      "log_loss": 0.24986955418638299,
+      "brier": 0.06621237708262609,
+      "confusion_matrix": [
+        [
+          78,
+          5
+        ],
+        [
+          11,
+          139
+        ]
+      ]
+    },
+    "validation_self72": {
+      "n": 72,
+      "accuracy": 0.4166666666666667,
+      "macro_f1": 0.34375,
+      "balanced_accuracy": 0.4166666666666667,
+      "fake_recall": 0.08333333333333333,
+      "real_recall": 0.75,
+      "log_loss": 1.3622369699279682,
+      "brier": 0.44468487156842723,
+      "confusion_matrix": [
+        [
+          27,
+          9
+        ],
+        [
+          33,
+          3
+        ]
+      ]
+    }
+  },
+  "v3": {
+    "scope": "Development-only global generation classification; not a full-system/CSI evaluation or an independent test.",
+    "baseline": {
+      "validation_original": {
+        "n": 233,
+        "accuracy": 0.9957081545064378,
+        "macro_f1": 0.9953337472212764,
+        "balanced_accuracy": 0.9966666666666666,
+        "fake_recall": 0.9933333333333333,
+        "real_recall": 1.0,
+        "log_loss": 0.016354488084268204,
+        "brier": 0.0049975538276023,
+        "confusion_matrix": [
+          [
+            83,
+            0
+          ],
+          [
+            1,
+            149
+          ]
+        ]
+      },
+      "validation_self72": {
+        "n": 72,
+        "accuracy": 0.4722222222222222,
+        "macro_f1": 0.36134453781512604,
+        "balanced_accuracy": 0.4722222222222222,
+        "fake_recall": 0.05555555555555555,
+        "real_recall": 0.8888888888888888,
+        "log_loss": 2.9849473461085347,
+        "brier": 0.4826374641604719,
+        "confusion_matrix": [
+          [
+            32,
+            4
+          ],
+          [
+            34,
+            2
+          ]
+        ]
+      }
+    },
+    "v3": {
+      "validation_original": {
+        "accuracy": 0.9871244635193133,
+        "macro_f1": 0.9860737553045246,
+        "balanced_accuracy": 0.99,
+        "real_recall": 1.0,
+        "fake_recall": 0.98,
+        "confusion_matrix": [
+          [
+            83,
+            0
+          ],
+          [
+            3,
+            147
+          ]
+        ]
+      },
+      "validation_self72": {
+        "accuracy": 0.875,
+        "macro_f1": 0.8747826086956522,
+        "balanced_accuracy": 0.875,
+        "real_recall": 0.9166666666666666,
+        "fake_recall": 0.8333333333333334,
+        "confusion_matrix": [
+          [
+            33,
+            3
+          ],
+          [
+            6,
+            30
+          ]
+        ]
+      }
+    },
+    "resolutions": {
+      "Swin": [
+        224,
+        224
+      ],
+      "supplemental": [
+        384,
+        384
+      ]
+    },
+    "thresholds": {
+      "baseline_Swin": 0.5,
+      "selected_Swin": 0.99,
+      "supplemental_raw_logit": 4.0
+    },
+    "fresh_test_evaluated": false,
+    "legacy_test_evaluated": false,
+    "automatic_deployment_approved": false,
+    "strict_retention_improvement_gate_passed": true,
+    "ninety_percent_each_domain_target_passed": false,
+    "third_party_weights_not_trained_by_team": true,
+    "external_training_overlap_unknown": true
+  },
+  "v31": {
+    "validation_original": {
+      "n": 233,
+      "accuracy": 0.9871244635193133,
+      "macro_f1": 0.9860737553045246,
+      "balanced_accuracy": 0.99,
+      "fake_recall": 0.98,
+      "real_recall": 1.0,
+      "confusion_matrix": [
+        [
+          83,
+          0
+        ],
+        [
+          3,
+          147
+        ]
+      ]
+    },
+    "validation_self72": {
+      "n": 72,
+      "accuracy": 0.8888888888888888,
+      "macro_f1": 0.8885448916408669,
+      "balanced_accuracy": 0.8888888888888888,
+      "fake_recall": 0.8333333333333334,
+      "real_recall": 0.9444444444444444,
+      "confusion_matrix": [
+        [
+          34,
+          2
+        ],
+        [
+          6,
+          30
+        ]
+      ]
+    }
+  },
+  "CSI_inputs": {
+    "Swin": [
+      224,
+      224
+    ],
+    "detector": [
+      640,
+      640
+    ],
+    "segmenter": [
+      640,
+      640
+    ],
+    "supplemental": [
+      384,
+      384
+    ]
+  },
+  "CSI_local_thresholds": {
+    "detector_confidence": 0.35,
+    "NMS_IoU": 0.45,
+    "max_detections": 50,
+    "mask_pixel": 0.5,
+    "minimum_area_fraction": 0.005
+  },
+  "CSI_live_V3": {
+    "split": "CSI validation, n=126",
+    "baseline": {
+      "n": 126,
+      "accuracy": 0.9126984126984127,
+      "macro_f1": 0.860661505981703,
+      "balanced_accuracy": 0.9095238095238095,
+      "fake_recall": 0.9142857142857143,
+      "real_recall": 0.9047619047619048,
+      "confusion_matrix": [
+        [
+          19,
+          2
+        ],
+        [
+          9,
+          96
+        ]
+      ]
+    },
+    "v3": {
+      "n": 126,
+      "accuracy": 0.9047619047619048,
+      "macro_f1": 0.8455882352941176,
+      "balanced_accuracy": 0.8857142857142857,
+      "fake_recall": 0.9142857142857143,
+      "real_recall": 0.8571428571428571,
+      "confusion_matrix": [
+        [
+          18,
+          3
+        ],
+        [
+          9,
+          96
+        ]
+      ]
+    },
+    "baseline_http_p95_ms": 907.3119777500267,
+    "v3_warm_client_p95_ms": 1246.7408552500387,
+    "gate_checks": {
+      "pristine_false_referrals": true,
+      "edited_recall": true,
+      "macro_f1": false,
+      "latency": true
+    },
+    "joint_preservation_gates_passed": false,
+    "fresh_test_evaluated": false,
+    "automatic_authenticity_approved": false,
+    "note": "Joint-validation gates do not override the unmet 90% additional-source target or establish an independent test result."
+  },
+  "CSI_V31_cached": {
+    "n": 126,
+    "accuracy": 0.9126984126984127,
+    "macro_f1": 0.860661505981703,
+    "balanced_accuracy": 0.9095238095238095,
+    "fake_recall": 0.9142857142857143,
+    "real_recall": 0.9047619047619048,
+    "confusion_matrix": [
+      [
+        19,
+        2
+      ],
+      [
+        9,
+        96
+      ]
+    ]
+  },
+  "coarse_threshold_candidates": [
+    4,
+    4.5,
+    5,
+    5.5,
+    6
+  ],
+  "adaptive_refinement": [
+    4,
+    4.25,
+    4.5
+  ],
+  "refinement_constraints": {
+    "CSI_macro_f1_at_least": 0.860661505981703,
+    "CSI_edited_recall_at_least": 0.9142857142857143,
+    "CSI_pristine_false_referrals_at_most": 2,
+    "original_global_BA_at_least": 0.9466666666666665,
+    "original_global_real_recall_at_least": 0.95,
+    "additional_global_BA_at_least": 0.875,
+    "additional_global_fake_recall_at_least": 0.8333333333333334,
+    "additional_global_real_recall_at_least": 0.8
+  },
+  "all_checked_refinement_candidates": [
+    {
+      "raw_boundary": 4.0,
+      "global_domains": {
+        "validation_original": {
+          "n": 233,
+          "accuracy": 0.9871244635193133,
+          "macro_f1": 0.9860737553045246,
+          "balanced_accuracy": 0.99,
+          "fake_recall": 0.98,
+          "real_recall": 1.0,
+          "confusion_matrix": [
+            [
+              83,
+              0
+            ],
+            [
+              3,
+              147
+            ]
+          ]
+        },
+        "validation_self72": {
+          "n": 72,
+          "accuracy": 0.875,
+          "macro_f1": 0.8747826086956522,
+          "balanced_accuracy": 0.875,
+          "fake_recall": 0.8333333333333334,
+          "real_recall": 0.9166666666666666,
+          "confusion_matrix": [
+            [
+              33,
+              3
+            ],
+            [
+              6,
+              30
+            ]
+          ]
+        }
+      },
+      "CSI_referral_validation": {
+        "n": 126,
+        "accuracy": 0.9047619047619048,
+        "macro_f1": 0.8455882352941176,
+        "balanced_accuracy": 0.8857142857142857,
+        "fake_recall": 0.9142857142857143,
+        "real_recall": 0.8571428571428571,
+        "confusion_matrix": [
+          [
+            18,
+            3
+          ],
+          [
+            9,
+            96
+          ]
+        ]
+      },
+      "checks": {
+        "CSI_macro_F1": false,
+        "CSI_edited_recall": true,
+        "CSI_pristine_false_referrals": false,
+        "original_global_retention": true,
+        "additional_global_retention": true
+      },
+      "feasible": false,
+      "worst_global_BA": 0.875,
+      "mean_global_macro_F1": 0.9304281820000884,
+      "CSI_decisions_equal_baseline": false
+    },
+    {
+      "raw_boundary": 4.25,
+      "global_domains": {
+        "validation_original": {
+          "n": 233,
+          "accuracy": 0.9871244635193133,
+          "macro_f1": 0.9860737553045246,
+          "balanced_accuracy": 0.99,
+          "fake_recall": 0.98,
+          "real_recall": 1.0,
+          "confusion_matrix": [
+            [
+              83,
+              0
+            ],
+            [
+              3,
+              147
+            ]
+          ]
+        },
+        "validation_self72": {
+          "n": 72,
+          "accuracy": 0.8888888888888888,
+          "macro_f1": 0.8885448916408669,
+          "balanced_accuracy": 0.8888888888888888,
+          "fake_recall": 0.8333333333333334,
+          "real_recall": 0.9444444444444444,
+          "confusion_matrix": [
+            [
+              34,
+              2
+            ],
+            [
+              6,
+              30
+            ]
+          ]
+        }
+      },
+      "CSI_referral_validation": {
+        "n": 126,
+        "accuracy": 0.9126984126984127,
+        "macro_f1": 0.860661505981703,
+        "balanced_accuracy": 0.9095238095238095,
+        "fake_recall": 0.9142857142857143,
+        "real_recall": 0.9047619047619048,
+        "confusion_matrix": [
+          [
+            19,
+            2
+          ],
+          [
+            9,
+            96
+          ]
+        ]
+      },
+      "checks": {
+        "CSI_macro_F1": true,
+        "CSI_edited_recall": true,
+        "CSI_pristine_false_referrals": true,
+        "original_global_retention": true,
+        "additional_global_retention": true
+      },
+      "feasible": true,
+      "worst_global_BA": 0.8888888888888888,
+      "mean_global_macro_F1": 0.9373093234726957,
+      "CSI_decisions_equal_baseline": true
+    },
+    {
+      "raw_boundary": 4.5,
+      "global_domains": {
+        "validation_original": {
+          "n": 233,
+          "accuracy": 0.9871244635193133,
+          "macro_f1": 0.9860737553045246,
+          "balanced_accuracy": 0.99,
+          "fake_recall": 0.98,
+          "real_recall": 1.0,
+          "confusion_matrix": [
+            [
+              83,
+              0
+            ],
+            [
+              3,
+              147
+            ]
+          ]
+        },
+        "validation_self72": {
+          "n": 72,
+          "accuracy": 0.875,
+          "macro_f1": 0.8743942624539639,
+          "balanced_accuracy": 0.875,
+          "fake_recall": 0.8055555555555556,
+          "real_recall": 0.9444444444444444,
+          "confusion_matrix": [
+            [
+              34,
+              2
+            ],
+            [
+              7,
+              29
+            ]
+          ]
+        }
+      },
+      "CSI_referral_validation": {
+        "n": 126,
+        "accuracy": 0.9126984126984127,
+        "macro_f1": 0.860661505981703,
+        "balanced_accuracy": 0.9095238095238095,
+        "fake_recall": 0.9142857142857143,
+        "real_recall": 0.9047619047619048,
+        "confusion_matrix": [
+          [
+            19,
+            2
+          ],
+          [
+            9,
+            96
+          ]
+        ]
+      },
+      "checks": {
+        "CSI_macro_F1": true,
+        "CSI_edited_recall": true,
+        "CSI_pristine_false_referrals": true,
+        "original_global_retention": true,
+        "additional_global_retention": false
+      },
+      "feasible": false,
+      "worst_global_BA": 0.875,
+      "mean_global_macro_F1": 0.9302340088792442,
+      "CSI_decisions_equal_baseline": true
+    }
+  ],
+  "prior_V3_joint_gate_passed": false,
+  "V31_new_live_cohort_run": false,
+  "original_tests_reopened": false,
+  "fresh_test_evaluated": false,
+  "automatic_authenticity_approved": false
+}

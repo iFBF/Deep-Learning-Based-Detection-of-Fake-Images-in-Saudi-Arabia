@@ -1,0 +1,20 @@
+{
+  "version": "real-abshar-v3.1-development",
+  "swin_threshold": 0.99,
+  "supplemental_raw_logit_boundary": 4.25,
+  "fusion": "Swin score >= swin_threshold OR supplemental raw logit >= supplemental boundary.",
+  "local_box_and_mask_policy": "Unchanged M8 box/area flags. CSI validation quality recomputed from cached outputs; no new live V3.1 timing.",
+  "baseline_release_id": "real-abshar-m8-fbaa1c95818d",
+  "development_only": true,
+  "automatic_deployment_approved": false,
+  "fresh_test_evaluated": false,
+  "upstream_provider_raw_boundary": 1.359375,
+  "upstream_calibration_bias": -0.7403357915937764,
+  "upstream_provider_probability_threshold": 0.65,
+  "selection_spec_sha256": "a95b06678b1dea00289d07a00161979d5eaa66bda578e842516d959b829b3293",
+  "selection_results_sha256": "24a3293a00a60296e191fda7f085bb64acb2f2fccd7c756647f111b19eb63317",
+  "validation_selection_is_adaptive": true,
+  "joint_validation_status": "cached_validation_quality_recomputation_only",
+  "current_policy_live_joint_validation_complete": false,
+  "prior_V3_live_joint_gate_passed": false
+}

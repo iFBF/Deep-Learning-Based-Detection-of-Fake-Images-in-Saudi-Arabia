@@ -1,0 +1,7 @@
+# Keep Kaggle's existing matching CUDA torch/torchvision pair.
+# Install CPU PyTorch separately if reproducing outside Kaggle.
+-r requirements_light.txt
+pandas>=2.2,<4
+scipy>=1.13,<2
+timm==1.0.15
+safetensors==0.7.0

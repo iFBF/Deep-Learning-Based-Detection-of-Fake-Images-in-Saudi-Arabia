@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv*/
+*.onnx
+*.pt
+*.safetensors
+*.zip
+latest*.json
+wandb/
+private*/

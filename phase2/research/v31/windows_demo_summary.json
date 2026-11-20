@@ -1,0 +1,62 @@
+{
+  "scope": "One user-reported Windows demonstration, consistency-audited; not an accuracy test or benchmark",
+  "sample_count": 1,
+  "release_id": "real-abshar-v3.1-01a330b634e5",
+  "portal_version": "real-abshar-v3.1-portal-1",
+  "image_role": "Previously inspected generated squirrel/conductor demonstration",
+  "native_input": [
+    1024,
+    1024
+  ],
+  "model_inputs": {
+    "swin": [
+      224,
+      224
+    ],
+    "supplemental": [
+      384,
+      384
+    ],
+    "detector": [
+      640,
+      640
+    ],
+    "segmenter": [
+      640,
+      640
+    ]
+  },
+  "thresholds": {
+    "selected_swin": 0.99,
+    "supplemental_raw_logit": 4.25,
+    "detector_confidence": 0.35,
+    "detector_NMS_IoU": 0.45,
+    "max_detections": 50,
+    "mask_pixel": 0.5,
+    "minimum_area_fraction": 0.005
+  },
+  "result": {
+    "status": "review_recommended",
+    "flags": {
+      "swin_generation": false,
+      "supplemental_generation": true,
+      "edited_region_box": true,
+      "edited_area": true
+    },
+    "swin_fake_score": 0.0006366262520378482,
+    "supplemental_raw_logit": 13.218183517456055,
+    "predicted_regions": 2,
+    "predicted_foreground_pixels": 568890,
+    "predicted_foreground_fraction": 0.5425357818603516
+  },
+  "timing_ms": {
+    "client_total": 5982.875099987723,
+    "includes_supplemental_model_load": false,
+    "supplemental_inference": 866.2301999866031,
+    "baseline_http_roundtrip": 4964.881699997932
+  },
+  "consistency_checks_passed": true,
+  "check_count": 19,
+  "fresh_test_evaluated": false,
+  "automatic_authenticity_approved": false
+}

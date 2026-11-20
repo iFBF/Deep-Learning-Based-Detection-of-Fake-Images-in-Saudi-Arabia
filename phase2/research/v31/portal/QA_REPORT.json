@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "actual_supplemental_ONNX": true,
+  "baseline": "Synthetic local HTTP fixture, not private M8 models",
+  "checks": [
+    "single original API request per image",
+    "mask bytes and native boxes preserved",
+    "combined rule and component flags",
+    "score cutoffs and original local flags unchanged",
+    "health and HTML routes",
+    "origin guard",
+    "upload type and size limits",
+    "malformed image handling",
+    "busy request rejection",
+    "frozen candidate payload unchanged"
+  ],
+  "real_private_baseline_tested_here": false,
+  "Windows_test_performed_here": false,
+  "fresh_test_evaluated": false,
+  "user_reported_smoke_result": "Combined review; supplemental, box and area flags true; Swin flag false. Full user JSON not yet supplied.",
+  "browser_qa": {
+    "environment": "Managed Chrome preview with labelled synthetic responses, not actual image-accuracy evaluation",
+    "checks": {
+      "flagged_result_shown_as_human_review": true,
+      "unflagged_result_shown_without_authenticity_claim": true,
+      "old_results_cleared_on_new_image": true,
+      "box_and_mask_checkbox_states": true,
+      "native_0_1_mask_and_box_overlay_visually_checked": true,
+      "result_JSON_download_event": true
+    },
+    "mobile_browser_visual_qa_performed": false
+  },
+  "new_performance_benchmark_performed": false,
+  "delivery": "Source-only local add-on; frozen V3.1 candidate, original M8 files and thresholds unchanged."
+}
