@@ -28,6 +28,15 @@ CSI conditions:126 validation images/21families,105edited/21pristine; C224/suppl
 
 `windows_demo_summary.json` records one user-provided Windows result from the known squirrel/conductor demonstration. It is a smoke test, not an accuracy estimate or p95 benchmark. The full-resolution mask was checked against its foreground count. Browser QA itself used labelled synthetic fixtures.
 
+## Confirmed W&B evidence and backup
+
+On 20 November 2026, we logged our existing V3.1 development evidence and backed up our frozen research candidate. The SDK receipt confirms upload completion for release `real-abshar-v3.1-01a330b634e5` at source commit `b650253acd1bafe673c30b50d36bd35267ec85b4`.
+
+- [Development evidence run](https://wandb.ai/f1k80-kaust/Real-Abshar-Phase2/runs/v31-01a330b634e5-review)
+- [Frozen candidate backup, version 0](https://wandb.ai/f1k80-kaust/Real-Abshar-Phase2/artifacts/model/real-abshar-v31-research-01a330b634e5/v0)
+
+These uploads record work already completed; they involved no new training, inference or held-out evaluation. Authorized graders need access to the private backup artifact to retrieve its model assets.
+
 ## Remaining limits
 
 The additional development accuracy and macro-F1 remain below90%. The72images repeatedly influenced selection; external training overlap with public sources cannot be excluded. Publisher robustness failures and original small-edit weaknesses remain. Scores are screening evidence, not calibrated authenticity probabilities. Automatic authenticity decisions remain NO-GO. The original closed Phase1/Phase2 tests remain closed.

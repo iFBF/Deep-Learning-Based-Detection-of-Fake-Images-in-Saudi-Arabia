@@ -31,7 +31,7 @@ This checks committed source hashes and metric arithmetic using the aggregate co
 
 W&B project: https://wandb.ai/f1k80-kaust/Real-Abshar-Phase2
 
-Private inputs, pixel/box annotations, per-image predictions, failure-gallery photographs, model binaries, API keys and personal student details are excluded from this publication. Grant actual graders authorized private access to required weights/data. The earlier Phase1 code and its recorded results remain unchanged; the independent teammate Phase1 rerun is pending.
+Private inputs, pixel/box annotations, per-image predictions, failure-gallery photographs, model binaries, API keys and personal student details are excluded from this publication. Grant actual graders authorized private access to required weights/data. We retained our Phase 1 code and recorded results. We received Anoud's Phase 1 reproduction results and completed 107 consistency checks against our main records; saved metrics and prediction files agree. Our verification covers the results archive, which does not include the executed notebook or checkpoint binaries.
 
 ## V3.1 development extension, 19 November 2026
 
