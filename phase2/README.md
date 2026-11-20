@@ -32,3 +32,7 @@ This checks committed source hashes and metric arithmetic using the aggregate co
 W&B project: https://wandb.ai/f1k80-kaust/Real-Abshar-Phase2
 
 Private inputs, pixel/box annotations, per-image predictions, failure-gallery photographs, model binaries, API keys and personal student details are excluded from this publication. Grant actual graders authorized private access to required weights/data. The earlier Phase1 code and its recorded results remain unchanged; the independent teammate Phase1 rerun is pending.
+
+## V3.1 development extension, 19 November 2026
+
+See [research/v31](research/v31/README.md) for the separately frozen two-detector generation policy, negative V2/V3 findings, adaptive validation threshold selection and working Windows comparison portal. Original M4/M5 models and the fixed evaluation are preserved. The three-member M4/M5/M8 scope is unchanged. No new original-test inference or automatic-authenticity approval is claimed.

@@ -67,7 +67,7 @@ held-out performance estimate, and family-level correlations reduce effective sa
 
 Original Phase1 acceptance criteria remain accuracy≥90% and macro-F1≥90%. The corrected main
 Phase1 test reached approximately68.60% accuracy and65.72% macro-F1, so those criteria were not met.
-The teammate independent rerun is still pending. Better segmentation overlap does not replace
+A teammate supplied an operator-labelled results archive on 14 November; saved-artifact agreement was audited. The results-only archive does not independently establish fresh training. Better segmentation overlap does not replace
 the original classifier criteria. Preliminary stance: **NO-GO for automatic authenticity
 decisions**; a constrained human-review demonstration remains the supported research use.
 
@@ -113,4 +113,8 @@ Test114 images/19 source families; classifier224×224, detector/segmenter640×64
 
 Primary AP is scored before native clipping. Secondary served-native AP is retained in JSON for transparency; the earlier M4 validator/training comparison remains separately labelled. No test confidence threshold was chosen. All figures and confidence intervals derive from cached predictions; plotting does not repeat model inference.
 
-Original Phase1 accuracy/macro-F1 criteria were not met on its closed test. These Phase2 targets do not replace them. Preliminary decision: NO-GO for automatic authenticity decisions; human-review prototype only. No Saudi operational accuracy or natural-video accuracy claim is supported. The teammate independent Phase1 rerun remains pending.
+Original Phase1 accuracy/macro-F1 criteria were not met on its closed test. These Phase2 targets do not replace them. Preliminary decision: NO-GO for automatic authenticity decisions; human-review prototype only. No Saudi operational accuracy or natural-video accuracy claim is supported. The supplied teammate archive agrees at the saved-artifact level; fresh execution is not authenticated by static files alone.
+
+## V3.1 research addendum — 19 November 2026
+
+The optional [V3.1 comparison](research/v31/MODEL_CARD.md) adds an externally trained generation detector at raw cutoff 4.25, alongside Swin at .99 and unchanged local flags. The original three-model test measurements in this card remain fixed. V3.1 development accuracy is 88.89% on 72 reused additional images; this is not an independent test or a replacement for the original criteria. Its cached CSI validation decisions equal the original baseline. A user-provided Windows JSON records a successful known-image portal check. New live V3.1 cohort timing and an untouched holdout are not claimed. Source/runtime/model credit and the original failed V3 gate remain explicit in the linked research records.

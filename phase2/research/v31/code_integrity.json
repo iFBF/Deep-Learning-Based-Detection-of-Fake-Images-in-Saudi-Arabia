@@ -1,0 +1,43 @@
+{
+  "release_id": "real-abshar-v3.1-01a330b634e5",
+  "canonical_candidate_manifest_sha256": "3a22c0a3ae12fe9648888d7375bd6287a097cda12e58df775c71bffd1a2d2081",
+  "frozen_runtime_files": {
+    "runtime/predict_v3.py": {
+      "sha256": "1430afe56deb98b13232fa8cc0a97f9bc5cfa7a3c741df6b7d32cdc63a76323e",
+      "canonical_candidate_file": "predict_v3.py"
+    },
+    "runtime/v3_preprocess.py": {
+      "sha256": "a77da5de2941038791845e998bd1aef9feab04085a56162c72dc9c269ac379da",
+      "canonical_candidate_file": "v3_preprocess.py"
+    },
+    "runtime/v3_metrics.py": {
+      "sha256": "49a2389ba79984d691c3b594aeb2e07994fb18dde78d3544e92bde3b671c2a12",
+      "canonical_candidate_file": "v3_metrics.py"
+    },
+    "runtime/validate_joint.py": {
+      "sha256": "c3fcb0938dd7d630549b8ed89ec4e32e10e0e8bf948c02a23f5bfd33914aad3d",
+      "canonical_candidate_file": "validate_joint.py"
+    },
+    "runtime/cohort_data.py": {
+      "sha256": "9775cc7157574058da29046a93beb2d207b089167821e040edefcd70c941714e",
+      "canonical_candidate_file": "cohort_data.py"
+    },
+    "runtime/reproduce_development.py": {
+      "sha256": "e83b77bbb9ea6e0d9cb31058eafd7cb68c13250d4fd2bf9295c23aa16b3d0a08",
+      "canonical_candidate_file": "reproduce_development.py"
+    },
+    "runtime/enhance_data.py": {
+      "sha256": "c4fb34b0ec7863eba8f56708693c123e2cf659ac32cbce2c20ecd8ac41b59349",
+      "canonical_candidate_file": "enhance_data.py"
+    },
+    "runtime/requirements_light.txt": {
+      "sha256": "bca73567934c30767f70e91d72911d2e715d4274a77f21415219e7e60c7677eb",
+      "canonical_candidate_file": "requirements_light.txt"
+    },
+    "runtime/requirements_reproduce.txt": {
+      "sha256": "55a83ae3a40532d05107dd31d6ef2217ac65f8530f96d207e3660267caddbdd3",
+      "canonical_candidate_file": "requirements_reproduce.txt"
+    }
+  },
+  "scope": "Published runtime code bytes equal the private canonical candidate. Private model/evidence assets are supplied separately."
+}

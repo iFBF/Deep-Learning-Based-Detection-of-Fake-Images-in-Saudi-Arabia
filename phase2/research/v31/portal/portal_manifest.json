@@ -1,0 +1,13 @@
+{
+  "portal_version": "real-abshar-v3.1-portal-1",
+  "expected_policy_version": "real-abshar-v3.1-development",
+  "swin_threshold": 0.99,
+  "supplemental_raw_logit_boundary": 4.25,
+  "automatic_authenticity_approved": false,
+  "files_sha256": {
+    "QA_REPORT.json": "064ffe333c87862b677fd87e2e9a9021bf8efd9df9b3a9f75f4b6800567e32ec",
+    "README_PORTAL.md": "602aa23b7d414e2e7684afb6f5700e8e9704ed7ddd2b9867f6d1c332603a0443",
+    "portal_index.html": "0b2502bd0d1f518f9af31d155d2c002ccb4a6919bdc3ef241ad11189e01b17b2",
+    "portal_server.py": "a960bc236ed191af6b5e4fef432f98bc046b20e84969a78755f3ad6bed1bb506"
+  }
+}
